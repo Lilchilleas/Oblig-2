@@ -1,9 +1,13 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oblig2.API.Models.Data;
 
 namespace Oblig2.API.Controllers;
 
+
+
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class DiscussionController : ControllerBase
@@ -19,6 +23,7 @@ public class DiscussionController : ControllerBase
 
 
     //Methods
+ 
     [HttpGet("getDiscussions")]
     public async Task<ActionResult> getDiscussions(){
         var discussions = await _context.Discussion.ToListAsync();

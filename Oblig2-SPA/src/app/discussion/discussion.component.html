@@ -1,7 +1,15 @@
-<p>
-  discussion works!
-</p>
-
-<p *ngFor="let i of discussions">
-  {{i.id}}, {{i.title}}, {{i.content}}
-</p>
+<div class="container">
+  <div class="row align-items-center" *ngFor="let i of discussions">
+      
+      <div class="col-md-12 my-3 w-100">
+          <!-- Assuming you'd replace the asp-action routing with Angular's routerLink -->
+          <a style="text-decoration: none; color: inherit;">
+              <div class="bg-light p-4 rounded shadow">
+                  <h3 class="mb-2">{{ i.title }}</h3>
+                  <p>{{i.content}}</p>
+              </div>
+          </a>
+      </div>
+      
+  </div>
+</div>
