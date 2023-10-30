@@ -2,23 +2,24 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Oblig2.API.Models
 {
     public class Comment
     {
-        [Key]
-        public int CommentId { get; set; }
-      
-        public string Content { get; set; } = default!;
+        public int Id {get; set;}
+        public string Content {get; set;} = default!;
+        public int DiscussionId {get; set;}
 
-        
-        //Navigation Properties
-        //public IdentityUser CreatedBy { get; set; }
-        public Discussion Discussion { get; set; } = default!;
-        public Comment ParentComment { get; set; } = default!;
-        public int? ParentCommentId { get; set; } 
-        public ICollection<Comment> Replies { get; set; } = new List<Comment>();  
+    
+      
+
+        public int? ParentCommentId {get; set;}
+        public Comment? ParentComment {get; set;} = default!;
+       public ICollection<Comment> Replies { get; set; } = new List<Comment>();
+
+       
     }
 }

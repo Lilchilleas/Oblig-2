@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oblig2.API.Models.Data;
 
@@ -10,9 +11,11 @@ using Oblig2.API.Models.Data;
 namespace Oblig2.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20231027092554_CompletedModels")]
+    partial class CompletedModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.12");
@@ -86,22 +89,24 @@ namespace Oblig2.API.Migrations
 
             modelBuilder.Entity("Oblig2.API.Models.Comment", b =>
                 {
-                    b.HasOne("Oblig2.API.Models.Discussion", null)
+                    b.HasOne("Oblig2.API.Models.Discussion", "Discussion")
                         .WithMany("Comments")
                         .HasForeignKey("DiscussionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Oblig2.API.Models.Comment", "ParentComment")
-                        .WithMany("Replies")
+                        .WithMany("SubComments")
                         .HasForeignKey("ParentCommentId");
+
+                    b.Navigation("Discussion");
 
                     b.Navigation("ParentComment");
                 });
 
             modelBuilder.Entity("Oblig2.API.Models.Comment", b =>
                 {
-                    b.Navigation("Replies");
+                    b.Navigation("SubComments");
                 });
 
             modelBuilder.Entity("Oblig2.API.Models.Discussion", b =>

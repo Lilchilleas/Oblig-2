@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oblig2.API.Models.Data;
 
@@ -10,9 +11,11 @@ using Oblig2.API.Models.Data;
 namespace Oblig2.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20231029134130_RemovedDefaultOnSubComment")]
+    partial class RemovedDefaultOnSubComment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.12");
@@ -93,7 +96,7 @@ namespace Oblig2.API.Migrations
                         .IsRequired();
 
                     b.HasOne("Oblig2.API.Models.Comment", "ParentComment")
-                        .WithMany("Replies")
+                        .WithMany("SubComments")
                         .HasForeignKey("ParentCommentId");
 
                     b.Navigation("ParentComment");
@@ -101,7 +104,7 @@ namespace Oblig2.API.Migrations
 
             modelBuilder.Entity("Oblig2.API.Models.Comment", b =>
                 {
-                    b.Navigation("Replies");
+                    b.Navigation("SubComments");
                 });
 
             modelBuilder.Entity("Oblig2.API.Models.Discussion", b =>

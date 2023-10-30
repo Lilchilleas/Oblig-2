@@ -13,6 +13,7 @@ namespace Oblig2.API.Models.Data
         
         //Attributes
         public DbSet<Discussion> Discussion {get; set;}
+        public DbSet<Comment> Comments { get; set; }
         public DbSet<User> Users {get; set;}
     }
 }

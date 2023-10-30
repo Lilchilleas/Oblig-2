@@ -14,11 +14,7 @@ namespace Oblig2.API.Models
         public string Title { get; set; } = default!;
 
         public string Content { get; set; } = default!;
-        
-
-        //Navigation Properties
-        //public IdentityUser CreatedBy { get; set; }
-        public string CreatedById { get; set; }  = default!;
-        //public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+      
+        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

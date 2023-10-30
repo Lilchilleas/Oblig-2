@@ -1,0 +1,10 @@
+<a [routerLink]="['/create-discussion']">CREATE NEW DISCUSSION</a>
+
+<h1>Discussions List</h1>
+
+<ul>
+  <li *ngFor="let discussion of discussions">
+    
+    <a [routerLink]="['/discussion', discussion.id]">{{ discussion.title }}</a>
+  </li>
+</ul>

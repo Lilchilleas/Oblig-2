@@ -49,7 +49,7 @@ namespace Oblig2.API.Controllers
             return StatusCode(201);
         }
 
-
+        
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserLoginDto userToLogin){
             var user = await _repo.Login(userToLogin.Username.ToLower(),userToLogin.Password);
