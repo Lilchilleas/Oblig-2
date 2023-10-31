@@ -17,7 +17,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateCommentComponent } from './create-comment/create-comment.component';
 import { DiscussionService } from './service/discussion.service';
 import { AuthService } from './service/auth.service';
- 
+import { ErrorInterceptor, ErrorInterceptorProvider } from './service/error.interceptor';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
+
 
 
 
@@ -51,12 +54,16 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes),
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot()
   
   ],
   providers: [
     DiscussionService,
-    AuthService
+    AuthService,
+    ErrorInterceptorProvider,
+    
   ],
   bootstrap: [AppComponent]
 })

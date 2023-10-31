@@ -14,9 +14,7 @@
                 <li class="nav-item">
                     <a class="nav-link px-2" routerLink="#">Privacy</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2" (click)="logout()">Logout</a>
-                </li>
+                
             </ul>
 
             <ul *ngIf="!loggedIn()" class="navbar-nav">
@@ -28,13 +26,12 @@
                 </li>
             </ul>
 
-            <div *ngIf="loggedIn()" class="dropdown">
-                <a class="dropdown-toggle">
-                    Welcome User
+            <div *ngIf="loggedIn()" class="dropdown" dropdown>
+                <a class="dropdown-toggle" dropdownToggle>
+                    Welcome {{authService.decodedToken?.unique_name | titlecase}}
                 </a>
 
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a>
+                <div class="dropdown-menu" *dropdownMenu>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
                 </div>

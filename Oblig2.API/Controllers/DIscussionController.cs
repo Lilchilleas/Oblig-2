@@ -8,7 +8,7 @@ namespace Oblig2.API.Controllers;
 
 
 
-//[Authorize]
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class DiscussionController : ControllerBase
@@ -24,7 +24,7 @@ public class DiscussionController : ControllerBase
 
 
     //Methods
-    //[AllowAnonymous]
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult> GetDiscussions(){
 
@@ -37,6 +37,7 @@ public class DiscussionController : ControllerBase
         return Ok(discussions);
     }
 
+    [AllowAnonymous]
     [HttpGet("{id}")]
     public async Task<ActionResult<Discussion>> GetDiscussion(int id){
 

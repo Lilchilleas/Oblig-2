@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +14,8 @@ export class NavbarComponent implements OnInit {
   //Attributes
 
 
-  //Constructor
-  constructor() { }
+  //Constructor 
+  constructor(public authService: AuthService) { }
 
 
   //Methods
@@ -23,8 +24,8 @@ export class NavbarComponent implements OnInit {
 
 
   loggedIn(){
-    const token = localStorage.getItem('token');
-    return !!token;
+    return this.authService.loggedIn();
+    
   }
 
   logout(){
