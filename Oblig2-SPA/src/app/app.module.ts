@@ -19,6 +19,11 @@ import { DiscussionService } from './service/discussion.service';
 import { AuthService } from './service/auth.service';
 import { ErrorInterceptor, ErrorInterceptorProvider } from './service/error.interceptor';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { UpdateDiscussionComponent } from './update-discussion/update-discussion.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './service/auth.interceptor';
+import { AuthGuardService } from './service/auth-guard.service';
+
 
 
 
@@ -29,14 +34,15 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'discussions', component: DiscussionsListComponent },
   { path: 'discussion/:id', component: DiscussionDetailComponent },
-  { path: 'create-discussion', component: CreateDiscussionComponent },
+  { path: 'create-discussion', component: CreateDiscussionComponent,canActivate: [AuthGuardService]},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'update-discussion/:id',component: UpdateDiscussionComponent, canActivate: [AuthGuardService]},
 
 ]
 
 @NgModule({
-  declarations: [																					
+  declarations: [																						
     AppComponent,
     NavbarComponent,
     LoginComponent,
@@ -46,7 +52,8 @@ const routes: Routes = [
       DiscussionDetailComponent,
       CommentComponent,
       CreateDiscussionComponent,
-      CreateCommentComponent
+      CreateCommentComponent,
+      UpdateDiscussionComponent
    ],
   imports: [
     BrowserModule,
@@ -63,6 +70,8 @@ const routes: Routes = [
     DiscussionService,
     AuthService,
     ErrorInterceptorProvider,
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+
     
   ],
   bootstrap: [AppComponent]

@@ -37,4 +37,8 @@ export class DiscussionService {
   createComment(id: number, comment: any): Observable<any>{
     return this.http.post<any>(`${this.apiUrl}/${id}/CreateComment`,comment);
   }
+
+  updateComment(id: number, updatedDiscussion: any){
+    return this.http.put<any>(`${this.apiUrl}/${id}`,updatedDiscussion);
+  }
 }

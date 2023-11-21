@@ -4,6 +4,8 @@
 
   <p class="lead mt-3">{{ discussion?.content }}</p>
 
+  <a [routerLink]="['/update-discussion', discussion?.id]">EDIT</a>
+
   <h2 class="mt-4">Comments</h2>
   <app-create-comment [discussionId]="discussionId" class="mb-3"></app-create-comment>
   

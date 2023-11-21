@@ -82,7 +82,7 @@ public class DiscussionController : ControllerBase
             
             var parentComment = await _db.Comments .FindAsync(comment.ParentCommentId);
 
-            
+             
                 
             comment.ParentCommentId = parentComment.Id;
         }         
@@ -91,6 +91,28 @@ public class DiscussionController : ControllerBase
         await _db.SaveChangesAsync();
 
         return StatusCode(201);
+    }
+
+    
+   [HttpPut("{discussionId}")]
+    public async Task<ActionResult<Discussion>> UpdateDiscussion(int discussionId, Discussion updatedDiscussion){
+
+        var discussion = await _db.Discussion.FirstOrDefaultAsync(x => x.Id == discussionId);
+        if(discussion == null){
+            return BadRequest("Invalid discussion object");
+        }
+       
+        discussion.Title = updatedDiscussion.Title;
+        discussion.Content = updatedDiscussion.Content;
+
+        _db.Discussion.Update(discussion);
+
+        await _db.SaveChangesAsync();
+
+        return Ok(discussion);
+
+        
+
     }
 
 }

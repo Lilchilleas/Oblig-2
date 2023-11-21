@@ -17,7 +17,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options => {
     options.UseSqlite(builder.Configuration["ConnectionStrings:DataContextConnection"]);
 });
+
+
 builder.Services.AddScoped<IAuthRepository,AuthRepository>();
+
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => {
         options.TokenValidationParameters = new TokenValidationParameters{

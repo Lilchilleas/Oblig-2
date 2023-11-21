@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DiscussionService } from '../service/discussion.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service'; 
 
 @Component({
   selector: 'app-create-comment',
@@ -20,13 +21,21 @@ export class CreateCommentComponent {
 
 
   //Constructor
-  constructor(private discussionService: DiscussionService, private snackBar: MatSnackBar, private router: Router ) { }
+  constructor(private discussionService: DiscussionService,private authService: AuthService, private snackBar: MatSnackBar, private router: Router ) { }
 
 
 
 
   //Methods
   onSubmit(): void {
+
+    if (!this.authService.loggedIn()) {
+    
+      //this.snackBar.open('You must be logged in to post comments', 'Close', { duration: 5000 });
+      this.router.navigate(['/login']);  
+      return; 
+    }
+
 
     const comment = {
       content: this.content,
