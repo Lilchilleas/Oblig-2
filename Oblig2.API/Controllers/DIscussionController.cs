@@ -111,8 +111,21 @@ public class DiscussionController : ControllerBase
 
         return Ok(discussion);
 
-        
+    }
 
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteDiscussion(int id){
+
+        var discussion = await _db.Discussion.FirstOrDefaultAsync(x => x.Id == id);
+
+         if(discussion == null){
+            return BadRequest("Invalid discussion object");
+        }
+
+        _db.Discussion.Remove(discussion);
+        await _db.SaveChangesAsync();
+        return Ok();
     }
 
 }

@@ -26,7 +26,7 @@ export class CreateDiscussionComponent {
     this.discussionService.createDiscussion(this.discussion).subscribe(
       () => {
         this.snackBar.open('Discussion created successfully!', 'Close', {
-          duration: 5000,  // Duration 5 seconds
+          duration: 5000,  
         });
         this.router.navigate(['/discussions']); 
       },

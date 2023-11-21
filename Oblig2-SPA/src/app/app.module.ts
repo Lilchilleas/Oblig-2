@@ -23,6 +23,7 @@ import { UpdateDiscussionComponent } from './update-discussion/update-discussion
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './service/auth.interceptor';
 import { AuthGuardService } from './service/auth-guard.service';
+import { DeleteDiscussionComponent } from './delete-discussion/delete-discussion.component';
 
 
 
@@ -38,11 +39,12 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'update-discussion/:id',component: UpdateDiscussionComponent, canActivate: [AuthGuardService]},
+  { path: 'delete-discussion/:id',component: DeleteDiscussionComponent, canActivate: [AuthGuardService]},
 
 ]
-
+ 
 @NgModule({
-  declarations: [																						
+  declarations: [																							
     AppComponent,
     NavbarComponent,
     LoginComponent,
@@ -53,7 +55,8 @@ const routes: Routes = [
       CommentComponent,
       CreateDiscussionComponent,
       CreateCommentComponent,
-      UpdateDiscussionComponent
+      UpdateDiscussionComponent,
+      DeleteDiscussionComponent
    ],
   imports: [
     BrowserModule,

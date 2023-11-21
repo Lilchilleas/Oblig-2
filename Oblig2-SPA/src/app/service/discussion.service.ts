@@ -41,4 +41,9 @@ export class DiscussionService {
   updateComment(id: number, updatedDiscussion: any){
     return this.http.put<any>(`${this.apiUrl}/${id}`,updatedDiscussion);
   }
+
+  deleteDiscussion(id: number){
+    return this.http.delete<any>(`${this.apiUrl}/${id}`);
+  }
+
 }
