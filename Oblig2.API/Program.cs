@@ -38,6 +38,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 });
 
  
+builder.Services.AddScoped<IAppRepository, AppRepository>();
 
 
 var app = builder.Build();
@@ -47,6 +48,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    DbInit.Seed(app).GetAwaiter().GetResult();
 }
 
 app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());

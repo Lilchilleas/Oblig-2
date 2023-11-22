@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DiscussionService } from '../service/discussion.service';
+import { AuthService } from '../service/auth.service';
 
 
 @Component({
@@ -16,10 +17,11 @@ export class DiscussionDetailComponent implements OnInit {
   discussion: any;
   discussionId!: number;
   createdByUser: any;
+  isOwner = false;
 
 
   //Constructor
-  constructor(private discussionService : DiscussionService, private route: ActivatedRoute) { }
+  constructor(private discussionService : DiscussionService, private route: ActivatedRoute, private authService: AuthService) { }
 
 
   //Methods
@@ -30,6 +32,7 @@ export class DiscussionDetailComponent implements OnInit {
     this.discussionService.getDiscussion(this.discussionId).subscribe(data => {       
       this.discussion = data;
       this.createdByUser = data.createdBy;
+      this.updatedStatus();
       console.log('Fetched Discussion:', this.discussion);
     },
     error => {
@@ -37,6 +40,15 @@ export class DiscussionDetailComponent implements OnInit {
     }
     );
   }
+
+
+  updatedStatus(): void{
+    const currentUser = this.authService.getUser();
+
+    if(currentUser.nameid == this.createdByUser.id){
+      this.isOwner = true;
+    } 
+  } 
 
 
      

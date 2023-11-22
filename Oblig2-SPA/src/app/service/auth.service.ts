@@ -14,10 +14,14 @@ export class AuthService {
   private apiUrl = 'http://localhost:5000/api/auth';
   jwtHelper = new JwtHelperService();
   decodedToken: any;
+
+
+
+
   //Constructor
   constructor(private http: HttpClient) { }
 
-  //Method
+  //Methods
   login(model: any){
     return this.http.post(`${this.apiUrl}/login`,model).pipe(
       map((response: any) => {
@@ -38,8 +42,16 @@ export class AuthService {
  
   loggedIn(){
     const token = localStorage.getItem('token');
-    
     return !this.jwtHelper.isTokenExpired(token);
+  }
+
+  getUser(){
+    const token = localStorage.getItem('token');
+    if (token && !this.jwtHelper.isTokenExpired(token)) {
+      this.decodedToken = this.jwtHelper.decodeToken(token);
+      return this.decodedToken; // Or return specific user details
+    }
+    return null;
   }
 
 }
