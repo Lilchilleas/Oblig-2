@@ -15,6 +15,8 @@ namespace Oblig2.API.Models
 
         public string Content { get; set; } = default!;
       
+
+        public User? CreatedBy { get; set; }
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

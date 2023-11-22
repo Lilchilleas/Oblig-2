@@ -10,21 +10,27 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class DeleteDiscussionComponent implements OnInit {
  
-
+  //Attributes
   discussion: any = { title: '', content: '' };
   discussionId =+ this.route.snapshot.paramMap.get('id')!;
 
+
+  //Constructor
   constructor(private discussionService: DiscussionService, private snackBar: MatSnackBar,private router: Router,private route: ActivatedRoute, ) { }
 
+
+  //Methods
   ngOnInit(): void {
      
     this.discussionService.getDiscussion(this.discussionId).subscribe(
       (data) => {
         this.discussion = data;
         console.log(this.discussion);
+        
       },
       (error) => {
         console.error('Failed to fetch discussion:', error);
+         
       }
     );
   }
@@ -39,7 +45,14 @@ export class DeleteDiscussionComponent implements OnInit {
           duration: 5000,
         });
         this.router.navigate(['/discussions'])
-    })
+      },
+        (error) => {
+          console.error('Failed to fetch discussion:', error);
+          this.snackBar.open('Error occured during delete ' + error.message , 'Close', {
+            duration: 5000,
+          });
+        }
+    )
   }
     
 

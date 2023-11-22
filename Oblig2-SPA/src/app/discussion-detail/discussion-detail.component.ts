@@ -15,7 +15,7 @@ export class DiscussionDetailComponent implements OnInit {
   //Attributes
   discussion: any;
   discussionId!: number;
-
+  createdByUser: any;
 
 
   //Constructor
@@ -27,11 +27,9 @@ export class DiscussionDetailComponent implements OnInit {
     this.discussionId = +this.route.snapshot.paramMap.get('id')!;
 
     
-    this.discussionService.getDiscussion(this.discussionId).subscribe(data => {
-      
-      
-        
+    this.discussionService.getDiscussion(this.discussionId).subscribe(data => {       
       this.discussion = data;
+      this.createdByUser = data.createdBy;
       console.log('Fetched Discussion:', this.discussion);
     },
     error => {

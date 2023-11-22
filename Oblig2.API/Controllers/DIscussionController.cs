@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -41,33 +42,51 @@ public class DiscussionController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<Discussion>> GetDiscussion(int id){
 
-        var discussion = await _db.Discussion
-                   .Include(x => x.Comments)
-                        .ThenInclude(c=>c.Replies)
-                   .FirstOrDefaultAsync(x => x.Id == id);
+       var discussion = await _db.Discussion
+            .Include(x => x.CreatedBy)
+            .Include(x => x.Comments)
+                .ThenInclude(c => c.CreatedBy) // Include creator of each comment
+            .Include(x => x.Comments)
+                .ThenInclude(c => c.Replies)
+                    .ThenInclude(r => r.CreatedBy) // Include creator of each reply
+            .FirstOrDefaultAsync(x => x.Id == id);
 
         if(discussion == null){
             return NotFound();
         }
+
+      
          
         discussion.Comments = discussion.Comments.Where(c => c.ParentCommentId == null).ToList();
         return Ok(discussion);
     }
      
 
-
-   [HttpPost("CreateDiscussion")]
+ 
+    [HttpPost("CreateDiscussion")]
     public async Task<ActionResult<Discussion>> CreateDiscussion(Discussion discussion){
         
         if(discussion == null){
             return BadRequest("Invalid discussion object");
         }
 
+        var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+        var user = await _db.Users.FindAsync(userId);
+
+        if(user == null){
+            return NotFound("User not found");
+        }
+
+        discussion.CreatedBy = user;
+
         await _db.Discussion.AddAsync(discussion);
         await _db.SaveChangesAsync();
 
         return StatusCode(201);
     }
+
+
 
     [HttpPost("{id}/CreateComment")]
     public async Task<ActionResult<Comment>> CreateComment(int id, Comment comment){
@@ -76,6 +95,16 @@ public class DiscussionController : ControllerBase
         }
         comment.DiscussionId = id;
 
+        var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+        var user = await _db.Users.FindAsync(userId);
+
+        if(user == null){
+            return NotFound("User not found");
+        }
+
+        comment.CreatedBy = user;
+
 
         if(comment.ParentCommentId != null)
         {
@@ -83,7 +112,6 @@ public class DiscussionController : ControllerBase
             var parentComment = await _db.Comments .FindAsync(comment.ParentCommentId);
 
              
-                
             comment.ParentCommentId = parentComment.Id;
         }         
         

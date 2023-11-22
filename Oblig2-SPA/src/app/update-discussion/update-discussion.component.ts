@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DiscussionService } from '../service/discussion.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-update-discussion',
@@ -9,16 +10,22 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UpdateDiscussionComponent implements OnInit{
 
+
+  //Attributes
   discussion: any = { title: '', content: '' };
 
-  constructor(private discussionService: DiscussionService,private route: ActivatedRoute) { }
 
+  //Constructor
+  constructor(private discussionService: DiscussionService,private route: ActivatedRoute,  private snackBar: MatSnackBar, private router: Router ) { }
+
+
+
+  //Methods
   ngOnInit(): void {
     const discussionId = +this.route.snapshot.paramMap.get('id')!;
     this.discussionService.getDiscussion(discussionId).subscribe(
       (data) => {
         this.discussion = data;
-        console.log(this.discussion);
       },
       (error) => {
         console.error('Failed to fetch discussion:', error);
@@ -34,9 +41,16 @@ export class UpdateDiscussionComponent implements OnInit{
     this.discussionService.updateComment(id,updatedDiscussion).subscribe(
       (updatedDiscussion) => {
         console.log('Discussion updated successfully:', updatedDiscussion);
+        this.snackBar.open('Discussion updated successfully!', 'Close', {
+          duration: 5000,  
+        });
+        this.router.navigate(['/discussions']); 
       },
       (error) => {
         console.log(error);
+        this.snackBar.open('Error updating discussion: ' + error.message, 'Close', {
+          duration: 5000,
+        });
       }
     );
 

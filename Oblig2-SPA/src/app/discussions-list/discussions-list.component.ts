@@ -11,12 +11,8 @@ export class DiscussionsListComponent implements OnInit {
   //Attributes
   discussions: any;
 
-
-
   //Constructor
   constructor(private discussionService : DiscussionService) { }
-
-
 
   //Methods
   ngOnInit(): void {

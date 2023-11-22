@@ -34,19 +34,22 @@ export class RegisterComponent implements OnInit {
         console.log("Registration in successfully");
         this.errorMessage = '';
         this.snackBar.open('User created successfully!', 'Close', {
-          duration: 5000,  // Duration 5 seconds
+          duration: 5000,  
         });
         this.router.navigate(['/login']); 
       },
       error => {
         console.log(error);
-        this.errorMessage = error;
+        this.snackBar.open('Error occur under registration: ' + error.message, 'Close', {
+          duration: 5000,
+        });
       }
     );
   }
 
   cancel(){
     console.log("canceled");
+    window.history.back();
   }
 
 

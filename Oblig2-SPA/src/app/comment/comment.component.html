@@ -1,6 +1,6 @@
 <div class="comment p-3 border rounded mb-3">
-  <p class="mb-2">{{ comment.content }}</p>
-
+<p class="mb-2">{{ comment.content }}</p>
+<p class="text-muted">Posted by: {{ comment.createdBy?.username }}</p>
  <app-create-comment  [discussionId]="comment.discussionId" [parentCommentId]="comment.id" class="mb-3"></app-create-comment>
 
   <div *ngIf="comment.replies" class="ml-4">

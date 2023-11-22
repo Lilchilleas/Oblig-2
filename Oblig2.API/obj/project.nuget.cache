@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IVFFlcurHrrBw06IOAq6/S8uJFUm8GxYgikT15xN4PLM1ftHYeV4Mv4dwUQkl9/YqshclTE4ysEHQLMO6WJWIA==",
+  "dgSpecHash": "FN/Jf5maDAAEv9Y58hSig9NroX0KbLWNIrSubc2g1bg2+EVpTgvoxc5WBFmQBZcTSxzmbQyfFW40crgzI7fVmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pavlo\\Documents\\Oblig2\\Oblig2.API\\Oblig2.API.csproj",
+  "projectFilePath": "C:\\Users\\pavlo\\Downloads\\Oblig-2\\Oblig2.API\\Oblig2.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pavlo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\pavlo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.13\\microsoft.aspnetcore.authentication.jwtbearer.7.0.13.nupkg.sha512",

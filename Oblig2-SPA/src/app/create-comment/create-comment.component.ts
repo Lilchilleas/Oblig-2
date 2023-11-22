@@ -24,8 +24,6 @@ export class CreateCommentComponent {
   constructor(private discussionService: DiscussionService,private authService: AuthService, private snackBar: MatSnackBar, private router: Router ) { }
 
 
-
-
   //Methods
   onSubmit(): void {
 
@@ -44,8 +42,6 @@ export class CreateCommentComponent {
     };
 
     
-
-
     this.discussionService.createComment(this.discussionId, comment).subscribe(
       () => {
         if (this.parentCommentId === null) {

@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit  {
           console.log("Logged in successfully");
           this.errorMessage = '';
           this.snackBar.open('Login successfull', 'Close', {
-            duration: 5000,  // Duration 5 seconds
+            duration: 5000,   
           });
           this.router.navigate(['/discussions']); 
         },
@@ -42,6 +42,9 @@ export class LoginComponent implements OnInit  {
           console.log("Failed to login");
           console.log(error);
           this.errorMessage = error + '| Wrong username or password';
+          this.snackBar.open('Error occured during login: ' + error.message , 'Close', {
+            duration: 5000,
+          });
         }
       );
   }

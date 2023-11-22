@@ -9,10 +9,17 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Oblig2-SPA';
+
+  //Attributes
+  title = 'Oblig-2';
   jwtHelper = new JwtHelperService();
+
+
+  //Constuctor
   constructor(private authService: AuthService) {}
 
+
+  //Methods
   ngOnInit(): void {
     const token = localStorage.getItem('token');
     if(token){

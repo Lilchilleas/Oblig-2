@@ -3,7 +3,7 @@
   <h1 class="display-4">{{ discussion?.title }}</h1>
 
   <p class="lead mt-3">{{ discussion?.content }}</p>
-
+  <p>Created by: {{ createdByUser?.username }}</p>
   <a [routerLink]="['/update-discussion', discussion?.id]">EDIT</a>
   <a [routerLink]="['/delete-discussion', discussion?.id]">DELETE</a>
 
