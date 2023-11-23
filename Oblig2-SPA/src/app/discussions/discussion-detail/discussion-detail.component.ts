@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DiscussionService } from '../service/discussion.service';
-import { AuthService } from '../service/auth.service';
+import { DiscussionService } from '../../service/discussion.service';
+import { AuthService } from '../../service/auth.service';
 
 
 @Component({
@@ -45,7 +45,7 @@ export class DiscussionDetailComponent implements OnInit {
   updatedStatus(): void{
     const currentUser = this.authService.getUser();
 
-    if(currentUser.nameid == this.createdByUser.id){
+    if(currentUser?.nameid == this.createdByUser.id){
       this.isOwner = true;
     } 
   } 

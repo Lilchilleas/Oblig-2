@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DiscussionService } from '../service/discussion.service';
+import { DiscussionService } from '../../service/discussion.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 

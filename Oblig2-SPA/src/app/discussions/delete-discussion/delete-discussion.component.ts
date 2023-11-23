@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DiscussionService } from '../service/discussion.service';
+import { DiscussionService } from '../../service/discussion.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -26,7 +26,6 @@ export class DeleteDiscussionComponent implements OnInit {
       (data) => {
         this.discussion = data;
         console.log(this.discussion);
-        
       },
       (error) => {
         console.error('Failed to fetch discussion:', error);

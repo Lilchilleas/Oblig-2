@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,7 @@ namespace Oblig2.API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        
-
+    
         //Attributes
         private readonly IAuthRepository _repo;
 
@@ -36,7 +36,9 @@ namespace Oblig2.API.Controllers
         //Methods
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserRegistrationDto userToRegister){
+
             userToRegister.Username = userToRegister.Username.ToLower();
+
             if(await _repo.UserExists(userToRegister.Username)){
                 return BadRequest("Username exists");
             }
@@ -51,15 +53,18 @@ namespace Oblig2.API.Controllers
         }
 
         
+
+        //The Login logic with Token generation is created based on the implemntation from:
+        //"Build an app with ASPNET Core and Angular from scratch" by Neil Cummings.
+        
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserLoginDto userToLogin){
             var user = await _repo.Login(userToLogin.Username.ToLower(),userToLogin.Password);
-
+            
             if(user == null){
                 return Unauthorized();
             } 
 
-            //Source /////DONT FORGET TO SOURCE THIS |TOKEN| AND EXPLAIN THE CODE
             var claims = new []
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
@@ -84,22 +89,14 @@ namespace Oblig2.API.Controllers
             return Ok(new {
                 token = tokenHandler.WriteToken(token)
             });
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
+
+
+// Source Reference:
+// ------------------------------------------------------------------------
+// - [Title: Build an app with ASPNET Core and Angular from scratch ]
+// - Author: [Neil Cummings]
+// - URL: [https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scratch/#instructor-1]
+

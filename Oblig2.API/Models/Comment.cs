@@ -12,10 +12,10 @@ namespace Oblig2.API.Models
         [Key]
         public int Id {get; set;}
         public string Content {get; set;} = default!;
-        public int DiscussionId {get; set;}
 
-    
-      
+
+
+        public int DiscussionId {get; set;}
         public User? CreatedBy { get; set; }
         public int? ParentCommentId {get; set;}
         public Comment? ParentComment {get; set;} = default!;

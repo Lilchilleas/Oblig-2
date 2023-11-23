@@ -18,6 +18,7 @@ builder.Services.AddDbContext<DataContext>(options => {
     options.UseSqlite(builder.Configuration["ConnectionStrings:DataContextConnection"]);
 });
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddScoped<IAuthRepository,AuthRepository>();
 

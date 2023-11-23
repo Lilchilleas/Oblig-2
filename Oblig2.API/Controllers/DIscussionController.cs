@@ -1,8 +1,10 @@
 using System.Security.Claims;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oblig2.API.Data;
+using Oblig2.API.DTO;
 using Oblig2.API.Models;
 using Oblig2.API.Models.Data;
 
@@ -16,11 +18,13 @@ namespace Oblig2.API.Controllers;
 public class DiscussionController : ControllerBase
 {
     private readonly IAppRepository _rep;
+    private readonly IMapper _mapper;
 
     //Attributes
-    public DiscussionController(IAppRepository rep)
+    public DiscussionController(IAppRepository rep, IMapper mapper)
     {
             _rep = rep;
+            _mapper = mapper;
     }
 
 
@@ -34,7 +38,7 @@ public class DiscussionController : ControllerBase
         if(discussions == null){
             return NotFound();
         }
-
+        
         return Ok(discussions);
     }
 
@@ -43,13 +47,11 @@ public class DiscussionController : ControllerBase
     public async Task<ActionResult<Discussion>> GetDiscussion(int id){
 
         var discussion = await _rep.GetDiscussionById(id);
+
         if(discussion == null){
             return NotFound();
         }
-
-      
-         
-        discussion.Comments = discussion.Comments.Where(c => c.ParentCommentId == null).ToList();
+        
         return Ok(discussion);
     }
      
@@ -57,9 +59,9 @@ public class DiscussionController : ControllerBase
  
     [HttpPost("CreateDiscussion")]
     public async Task<ActionResult<Discussion>> CreateDiscussion(Discussion discussion){
-    
+
         var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
-       
+
         if(await _rep.CreateDiscussion(discussion,userId)){
             return StatusCode(201);
         }else {
@@ -71,7 +73,7 @@ public class DiscussionController : ControllerBase
 
     [HttpPost("{id}/CreateComment")]
     public async Task<ActionResult<Comment>> CreateComment(int id, Comment comment){
-        
+
         var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
 
         if(await _rep.CreateComment(id,comment,userId)){

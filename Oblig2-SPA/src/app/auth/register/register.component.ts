@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../service/auth.service';
+import { AuthService } from '../../service/auth.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-register',
@@ -30,8 +31,8 @@ export class RegisterComponent implements OnInit {
 
   register(){
     this.authService.register(this.model).subscribe(
-      () => {
-        console.log("Registration in successfully");
+      (response) => {
+        console.log("Registration in successfully: " +response);
         this.errorMessage = '';
         this.snackBar.open('User created successfully!', 'Close', {
           duration: 5000,  
@@ -40,9 +41,7 @@ export class RegisterComponent implements OnInit {
       },
       error => {
         console.log(error);
-        this.snackBar.open('Error occur under registration: ' + error.message, 'Close', {
-          duration: 5000,
-        });
+        this.errorMessage =error;
       }
     );
   }

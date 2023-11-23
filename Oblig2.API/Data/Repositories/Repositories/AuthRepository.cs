@@ -66,13 +66,11 @@ namespace Oblig2.API.Data
             return false;
         }
 
-
-
-
-
-
-
         //Helper methods
+
+
+        //The CreatePasswordHash & VerifyPasswordHash logic is created based on the implemntation from:
+        //"HMACSHA512 Class (System.Security.Cryptography)
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using(var hmac = new System.Security.Cryptography.HMACSHA512())
@@ -96,15 +94,13 @@ namespace Oblig2.API.Data
                 return true;
             }
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
+
+
+
+// Source Reference:
+// ------------------------------------------------------------------------
+// - Title: HMACSHA512 Class (System.Security.Cryptography)
+// - Author: Microsoft
+// - URL: https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha512

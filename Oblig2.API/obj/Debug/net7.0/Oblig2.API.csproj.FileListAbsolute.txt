@@ -229,3 +229,5 @@ C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\obj\Debug\net7.0\refint\Oblig2.API.d
 C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\obj\Debug\net7.0\Oblig2.API.pdb
 C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\obj\Debug\net7.0\Oblig2.API.genruntimeconfig.cache
 C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\obj\Debug\net7.0\ref\Oblig2.API.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -9,6 +9,7 @@ namespace Oblig2.API.DTO
     public class UserRegistrationDto
     {
         [Required]
+        [MinLength(5, ErrorMessage = "User must have at least 5 characters")]
         public string Username {get; set;}
 
         [Required]
