@@ -1,0 +1,45 @@
+2023-11-23 23:06:47.868 +01:00 [Information] User profile is available. Using '"C:\Users\pavlo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-23 23:06:48.286 +01:00 [Information] Now listening on: "http://localhost:5000"
+2023-11-23 23:06:48.299 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-11-23 23:06:48.299 +01:00 [Information] Hosting environment: "Development"
+2023-11-23 23:06:48.300 +01:00 [Information] Content root path: "C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API"
+2023-11-23 23:06:51.573 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-23 23:06:51.642 +01:00 [Information] CORS policy execution successful.
+2023-11-23 23:06:51.647 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 76.8696ms
+2023-11-23 23:06:51.655 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-23 23:06:51.663 +01:00 [Information] CORS policy execution successful.
+2023-11-23 23:06:51.796 +01:00 [Warning] Failed to determine the https port for redirect.
+2023-11-23 23:06:51.800 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-23 23:06:51.817 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-23 23:06:51.909 +01:00 [Information] Acquiring to get all discussions
+2023-11-23 23:06:51.981 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-23 23:06:51.988 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.Models.Discussion, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-23 23:06:52.059 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 235.8562ms
+2023-11-23 23:06:52.059 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-23 23:06:52.068 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 413.1354ms
+2023-11-23 23:07:06.136 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-23 23:07:06.139 +01:00 [Information] CORS policy execution successful.
+2023-11-23 23:07:06.139 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 2.8624ms
+2023-11-23 23:07:06.141 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 60
+2023-11-23 23:07:06.142 +01:00 [Information] CORS policy execution successful.
+2023-11-23 23:07:06.144 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-23 23:07:06.156 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-23 23:07:06.187 +01:00 [Information] Login attempt with Username: kincetube30@gmail.com
+2023-11-23 23:07:06.300 +01:00 [Information] User: kincetube30@gmail.com logged in successfully
+2023-11-23 23:07:06.305 +01:00 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2023-11-23 23:07:06.309 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 152.661ms
+2023-11-23 23:07:06.310 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-23 23:07:06.311 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 60 - 200 - application/json;+charset=utf-8 169.8869ms
+2023-11-23 23:07:06.355 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-23 23:07:06.356 +01:00 [Information] CORS policy execution successful.
+2023-11-23 23:07:06.356 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.7621ms
+2023-11-23 23:07:06.362 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-23 23:07:06.363 +01:00 [Information] CORS policy execution successful.
+2023-11-23 23:07:06.372 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-23 23:07:06.373 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-23 23:07:06.381 +01:00 [Information] Acquiring to get all discussions
+2023-11-23 23:07:06.389 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-23 23:07:06.389 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.Models.Discussion, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-23 23:07:06.389 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 15.5696ms
+2023-11-23 23:07:06.390 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-23 23:07:06.390 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 28.7704ms

@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[7.0.12, )"
             },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"

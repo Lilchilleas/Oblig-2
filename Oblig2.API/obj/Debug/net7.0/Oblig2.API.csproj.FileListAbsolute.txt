@@ -231,3 +231,10 @@ C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\obj\Debug\net7.0\Oblig2.API.genrunti
 C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\obj\Debug\net7.0\ref\Oblig2.API.dll
 C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.Extensions.Logging.File.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.Sinks.Async.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API\bin\Debug\net7.0\Serilog.Sinks.RollingFile.dll

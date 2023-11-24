@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Oblig2.API.Data;
 using Oblig2.API.Models.Data;
+using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,16 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options => {
     options.UseSqlite(builder.Configuration["ConnectionStrings:DataContextConnection"]);
 });
+
+var loggerConfiguration = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.File($"Logs/app_{DateTime.Now:yyyyMMdd_HHmmss}.log");
+loggerConfiguration.Filter.ByExcluding(e => e.Properties.TryGetValue("SourceContext", out var value) &&
+            e.Level == LogEventLevel.Information &&
+            e.MessageTemplate.Text.Contains("Executed DbCommand"));
+
+var logger = loggerConfiguration.CreateLogger();
+builder.Logging.AddSerilog(logger);
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
