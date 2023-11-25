@@ -23,19 +23,24 @@ export class CreateDiscussionComponent {
 
   //Methods
   onSubmit(): void {
-    this.discussionService.createDiscussion(this.discussion).subscribe(
-      () => {
-        this.snackBar.open('Discussion created successfully!', 'Close', {
-          duration: 5000,  
-        });
-        this.router.navigate(['/discussions']); 
-      },
-      error => {
-        this.snackBar.open('Error creating discussion: ' + error.message, 'Close', {
-          duration: 5000,
-        });
-      }
-    );
+
+    if(this.discussion.title && this.discussion.content){
+      this.discussionService.createDiscussion(this.discussion).subscribe(
+        () => {
+          this.snackBar.open('Discussion created successfully!', 'Close', {
+            duration: 5000,  
+          });
+          this.router.navigate(['/discussions']); 
+        },
+        error => {
+          this.snackBar.open('Error creating discussion: ' + error, 'Close', {
+            duration: 5000,
+          });
+        }
+      );
+    }
+
+     
   }
 
 }

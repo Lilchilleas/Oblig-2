@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit  {
 
 
   login() {
+    if(this.model.username && this.model.password){
       this.authService.login(this.model).subscribe(
         () => {
           console.log("Logged in successfully");
@@ -42,11 +43,13 @@ export class LoginComponent implements OnInit  {
           console.log("Failed to login");
           console.log(error);
           this.errorMessage = error + '| Wrong username or password';
-          this.snackBar.open('Error occured during login: ' + error.message , 'Close', {
+          this.snackBar.open('Error occured during login: ' + error , 'Close', {
             duration: 5000,
           });
         }
       );
+    }
+       
   }
 
   

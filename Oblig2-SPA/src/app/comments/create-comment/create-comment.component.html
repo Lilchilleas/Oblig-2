@@ -1,6 +1,7 @@
-<form #commentForm="ngForm"  (submit)="onSubmit()" class="mt-4">
+<form #commentForm="ngForm" (submit)="onSubmit()" class="mt-4">
   <div class="mb-3">
     <textarea [(ngModel)]="content" name="content" required></textarea>
+    <div *ngIf="commentForm.form.get('content')?.invalid && (commentForm.form.get('content')?.dirty || commentForm.form.get('content')?.touched)">Content is needed</div>
   </div>
   
   <button type="submit" [disabled]="commentForm.invalid" class="btn btn-primary">Post Comment</button>

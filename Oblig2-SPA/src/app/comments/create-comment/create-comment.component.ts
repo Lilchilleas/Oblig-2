@@ -32,27 +32,29 @@ export class CreateCommentComponent {
       return; 
     }
 
-
-    const comment = {
-      content: this.content,
-      parentCommentId: this.parentCommentId ?? null,
-      subComments: []
-    };
-
-    
-    this.discussionService.createComment(this.discussionId, comment).subscribe(
-      () => {
-        if (this.parentCommentId === null) {
-          this.snackBar.open('Comment posted', 'Close', { duration: 5000 });
-        } else {
-          this.snackBar.open('Sub-comment posted', 'Close', { duration: 5000 });
+    if (this.content.length > 0) {
+      const comment = {
+        content: this.content,
+        parentCommentId: this.parentCommentId ?? null,
+        subComments: []
+      };
+  
+     
+      this.discussionService.createComment(this.discussionId, comment).subscribe(
+        () => {
+          if (this.parentCommentId === null) {
+            this.snackBar.open('Comment posted', 'Close', { duration: 5000 });
+          } else {
+            this.snackBar.open('Sub-comment posted', 'Close', { duration: 5000 });
+          }
+          location.reload();
+        },
+        (error) => {
+          this.snackBar.open('Error creating comment: ' + error, 'Close', { duration: 5000 });
         }
-        location.reload();
-      },
-      (error) => {
-        this.snackBar.open('Error creating comment: ' + error.message, 'Close', { duration: 5000 });
-      }
-    );
+      );
+    }
+     
 
 
 

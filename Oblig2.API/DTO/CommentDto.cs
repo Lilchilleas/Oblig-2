@@ -16,6 +16,6 @@ namespace Oblig2.API.DTO
         public UserDto? CreatedBy { get; set; }
         public int? ParentCommentId {get; set;}
         public CommentDto? ParentComment {get; set;} = default!;
-       public ICollection<CommentDto> Replies { get; set; } = new List<CommentDto>();
+        public ICollection<CommentDto> Replies { get; set; } = new List<CommentDto>();
     }
 }

@@ -34,7 +34,10 @@ export class UpdateDiscussionComponent implements OnInit{
   }
 
   onSubmit(){
-    this.updateDiscussion(this.discussion.id, this.discussion);
+    if(this.discussion.title && this.discussion.content){
+      this.updateDiscussion(this.discussion.id, this.discussion);
+    }
+     
   }
 
   updateDiscussion(id: number, updatedDiscussion: any){
@@ -48,7 +51,7 @@ export class UpdateDiscussionComponent implements OnInit{
       },
       (error) => {
         console.log(error);
-        this.snackBar.open('Error updating discussion: ' + error.message, 'Close', {
+        this.snackBar.open('Error updating discussion: ' + error, 'Close', {
           duration: 5000,
         });
       }

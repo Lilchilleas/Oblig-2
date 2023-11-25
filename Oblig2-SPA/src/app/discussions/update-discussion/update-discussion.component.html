@@ -2,12 +2,14 @@
   <div class="mb-3">
       <label for="title" class="form-label">Title</label>
       <input id="title" [(ngModel)]="discussion.title" name="title" required class="form-control" placeholder="">
+      <div *ngIf="discussionForm.form.get('title')?.invalid && (discussionForm.form.get('title')?.dirty || discussionForm.form.get('title')?.touched)">Title is required</div>
   </div>
 
   <div class="mb-3">
       <label for="content" class="form-label">Content</label>
       <textarea id="content" [(ngModel)]="discussion.content" name="content" required class="form-control" rows="5" placeholder=""></textarea>
+      <div *ngIf="discussionForm.form.get('content')?.invalid && (discussionForm.form.get('content')?.dirty || discussionForm.form.get('content')?.touched)">Content is required</div>
   </div>
 
-  <button type="submit"  class="btn btn-primary">Update Discussion</button>
+  <button type="submit" [disabled]="!discussionForm.valid" class="btn btn-primary">Update Discussion</button>
 </form>

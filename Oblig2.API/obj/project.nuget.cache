@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/W97IXnQWkFeHdsYZUyxJA/mTUMF605naxj4qQm3mDnPCVQ16ROOiQo3OO3iL6Qoj3aBS3H2K6TG15f7N9k7mQ==",
+  "dgSpecHash": "L8nSM9YgdJ9brs+SoNQxdOvvxyLREY3l3SsHWCKUxZNWZOi4aqPAnDA02MKs97HPkmNFQTsIvi6a1dac3xEEuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pavlo\\Downloads\\Oblig-2\\Oblig2.API\\Oblig2.API.csproj",
+  "projectFilePath": "C:\\Users\\pavlo\\Downloads\\Oblig-2-1\\Oblig2.API\\Oblig2.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pavlo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\pavlo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

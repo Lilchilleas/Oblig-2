@@ -3556,11 +3556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pavlo\\Downloads\\Oblig-2\\Oblig2.API\\Oblig2.API.csproj",
+      "projectUniqueName": "C:\\Users\\pavlo\\Downloads\\Oblig-2-1\\Oblig2.API\\Oblig2.API.csproj",
       "projectName": "Oblig2.API",
-      "projectPath": "C:\\Users\\pavlo\\Downloads\\Oblig-2\\Oblig2.API\\Oblig2.API.csproj",
+      "projectPath": "C:\\Users\\pavlo\\Downloads\\Oblig-2-1\\Oblig2.API\\Oblig2.API.csproj",
       "packagesPath": "C:\\Users\\pavlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pavlo\\Downloads\\Oblig-2\\Oblig2.API\\obj\\",
+      "outputPath": "C:\\Users\\pavlo\\Downloads\\Oblig-2-1\\Oblig2.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pavlo\\AppData\\Roaming\\NuGet\\NuGet.Config",

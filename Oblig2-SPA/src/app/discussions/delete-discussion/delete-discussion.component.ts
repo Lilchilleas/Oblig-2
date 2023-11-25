@@ -47,7 +47,7 @@ export class DeleteDiscussionComponent implements OnInit {
       },
         (error) => {
           console.error('Failed to fetch discussion:', error);
-          this.snackBar.open('Error occured during delete ' + error.message , 'Close', {
+          this.snackBar.open('Error occured during delete ' + error , 'Close', {
             duration: 5000,
           });
         }

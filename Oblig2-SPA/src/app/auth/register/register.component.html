@@ -7,15 +7,16 @@
       </div>
     <div class="form-group">
         <input type="text" class="form-control" required name="username" [(ngModel)]="model.username" placeholder="Username">
-        
+        <div *ngIf="registerForm.form.get('username')?.invalid && (registerForm.form.get('username')?.dirty || registerForm.form.get('username')?.touched)">Username is required</div>
     </div>
 
     <div class="form-group">
         <input type="password" class="form-control" required name="password" [(ngModel)]="model.password" placeholder="Password">
+        <div *ngIf="registerForm.form.get('password')?.invalid && (registerForm.form.get('password')?.dirty || registerForm.form.get('password')?.touched)">Username is required</div>
     </div>
 
     <div class="form-group text-center">
-        <button class="btn btn-success" type="submit">Register</button>
+        <button [disabled]="!registerForm.valid" class="btn btn-success" type="submit">Register</button>
         <button class="btn btn-default" type="button" (click)="cancel()">Cancel</button>
     </div>
 </form>

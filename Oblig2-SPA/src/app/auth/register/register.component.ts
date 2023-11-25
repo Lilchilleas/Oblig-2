@@ -30,7 +30,8 @@ export class RegisterComponent implements OnInit {
 
 
   register(){
-    this.authService.register(this.model).subscribe(
+    if(this.model.username && this.model.password){
+      this.authService.register(this.model).subscribe(
       (response) => {
         console.log("Registration in successfully: " +response);
         this.errorMessage = '';
@@ -42,8 +43,8 @@ export class RegisterComponent implements OnInit {
       error => {
         console.log(error);
         this.errorMessage =error;
-      }
-    );
+      });
+    }
   }
 
   cancel(){

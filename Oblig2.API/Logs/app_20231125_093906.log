@@ -1,0 +1,226 @@
+2023-11-25 09:39:09.881 +01:00 [Information] Database query initiated: Register user with username: pavlovicachilleas@gmail.com
+2023-11-25 09:39:10.511 +01:00 [Information] Database register operation succesfull with username: pavlovicachilleas@gmail.com
+2023-11-25 09:39:10.512 +01:00 [Information] Database query initiated: Register user with username: kincetube30@gmail.com
+2023-11-25 09:39:10.532 +01:00 [Information] Database register operation succesfull with username: kincetube30@gmail.com
+2023-11-25 09:39:10.532 +01:00 [Information] Database query initiated: Register user with username: lilchilleas@gmail.com
+2023-11-25 09:39:10.537 +01:00 [Information] Database register operation succesfull with username: lilchilleas@gmail.com
+2023-11-25 09:39:11.879 +01:00 [Information] User profile is available. Using '"C:\Users\pavlo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-25 09:39:12.409 +01:00 [Information] Now listening on: "http://localhost:5000"
+2023-11-25 09:39:12.410 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-11-25 09:39:12.410 +01:00 [Information] Hosting environment: "Development"
+2023-11-25 09:39:12.410 +01:00 [Information] Content root path: "C:\Users\pavlo\Downloads\Oblig-2-1\Oblig2.API"
+2023-11-25 09:39:49.087 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 78
+2023-11-25 09:39:49.227 +01:00 [Warning] Failed to determine the https port for redirect.
+2023-11-25 09:39:49.232 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:39:49.269 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:39:49.361 +01:00 [Information] Login attempt with Username: lilchilleas@gmail.com
+2023-11-25 09:39:49.364 +01:00 [Information] Database query initiated: Checking username: lilchilleas@gmail.com for existence and mathcing password in database
+2023-11-25 09:39:49.457 +01:00 [Information] Database login operation succesfull with username: lilchilleas@gmail.com and verified password
+2023-11-25 09:39:49.503 +01:00 [Information] User: lilchilleas@gmail.com logged in successfully
+2023-11-25 09:39:49.516 +01:00 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2023-11-25 09:39:49.545 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 264.7224ms
+2023-11-25 09:39:49.546 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:39:49.564 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 78 - 200 - application/json;+charset=utf-8 479.6695ms
+2023-11-25 09:39:55.179 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 81
+2023-11-25 09:39:55.184 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:39:55.185 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:39:55.190 +01:00 [Information] Login attempt with Username: lilchilleas@gmaffgil.com
+2023-11-25 09:39:55.190 +01:00 [Information] Database query initiated: Checking username: lilchilleas@gmaffgil.com for existence and mathcing password in database
+2023-11-25 09:39:55.304 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:39:55.305 +01:00 [Warning] Login failed: Username: lilchilleas@gmaffgil.com
+2023-11-25 09:39:55.308 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:39:55.314 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 129.4704ms
+2023-11-25 09:39:55.315 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:39:55.316 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 81 - 401 - application/problem+json;+charset=utf-8 137.0962ms
+2023-11-25 09:42:57.497 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:42:57.500 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:42:57.501 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 3.2689ms
+2023-11-25 09:42:57.504 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 38
+2023-11-25 09:42:57.504 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:42:57.507 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:42:57.507 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:42:57.508 +01:00 [Information] Login attempt with Username: asd
+2023-11-25 09:42:57.508 +01:00 [Information] Database query initiated: Checking username: asd for existence and mathcing password in database
+2023-11-25 09:42:57.514 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:42:57.517 +01:00 [Warning] Login failed: Username: asd
+2023-11-25 09:42:57.518 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:42:57.519 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 11.5583ms
+2023-11-25 09:42:57.519 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:42:57.519 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 38 - 401 - application/problem+json;+charset=utf-8 15.7344ms
+2023-11-25 09:43:14.022 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:43:14.022 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:43:14.023 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.9489ms
+2023-11-25 09:43:14.024 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 54
+2023-11-25 09:43:14.024 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:43:14.025 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:43:14.025 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:43:14.025 +01:00 [Information] Login attempt with Username: saadasdasd
+2023-11-25 09:43:14.026 +01:00 [Information] Database query initiated: Checking username: saadasdasd for existence and mathcing password in database
+2023-11-25 09:43:14.032 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:43:14.033 +01:00 [Warning] Login failed: Username: saadasdasd
+2023-11-25 09:43:14.033 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:43:14.034 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 8.9234ms
+2023-11-25 09:43:14.034 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:43:14.034 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 54 - 401 - application/problem+json;+charset=utf-8 10.0029ms
+2023-11-25 09:43:36.237 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:43:36.238 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:43:36.238 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.5212ms
+2023-11-25 09:43:36.241 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 45
+2023-11-25 09:43:36.241 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:43:36.241 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:43:36.241 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:43:36.242 +01:00 [Information] Login attempt with Username: lilasd23"da
+2023-11-25 09:43:36.242 +01:00 [Information] Database query initiated: Checking username: lilasd23"da for existence and mathcing password in database
+2023-11-25 09:43:36.245 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:43:36.246 +01:00 [Warning] Login failed: Username: lilasd23"da
+2023-11-25 09:43:36.247 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:43:36.247 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 5.7002ms
+2023-11-25 09:43:36.247 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:43:36.251 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 45 - 401 - application/problem+json;+charset=utf-8 10.2492ms
+2023-11-25 09:44:06.017 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:44:06.017 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:06.017 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.5786ms
+2023-11-25 09:44:06.020 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 45
+2023-11-25 09:44:06.020 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:06.020 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:06.020 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:44:06.021 +01:00 [Information] Login attempt with Username: lilasd23"da
+2023-11-25 09:44:06.021 +01:00 [Information] Database query initiated: Checking username: lilasd23"da for existence and mathcing password in database
+2023-11-25 09:44:06.024 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:44:06.024 +01:00 [Warning] Login failed: Username: lilasd23"da
+2023-11-25 09:44:06.025 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:44:06.025 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 4.6752ms
+2023-11-25 09:44:06.025 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:06.025 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 45 - 401 - application/problem+json;+charset=utf-8 5.7055ms
+2023-11-25 09:44:26.585 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:44:26.586 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:26.586 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.7349ms
+2023-11-25 09:44:26.589 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 47
+2023-11-25 09:44:26.589 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:26.589 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:26.589 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:44:26.590 +01:00 [Information] Login attempt with Username: asdasdqwd
+2023-11-25 09:44:26.590 +01:00 [Information] Database query initiated: Checking username: asdasdqwd for existence and mathcing password in database
+2023-11-25 09:44:26.594 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:44:26.595 +01:00 [Warning] Login failed: Username: asdasdqwd
+2023-11-25 09:44:26.596 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:44:26.597 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 7.1143ms
+2023-11-25 09:44:26.597 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:26.598 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 47 - 401 - application/problem+json;+charset=utf-8 9.0892ms
+2023-11-25 09:44:53.353 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:44:53.354 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:53.355 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 1.9674ms
+2023-11-25 09:44:53.357 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 48
+2023-11-25 09:44:53.357 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:53.358 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:53.358 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:44:53.358 +01:00 [Information] Login attempt with Username: sdadasdas
+2023-11-25 09:44:53.358 +01:00 [Information] Database query initiated: Checking username: sdadasdas for existence and mathcing password in database
+2023-11-25 09:44:53.363 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:44:53.364 +01:00 [Warning] Login failed: Username: sdadasdas
+2023-11-25 09:44:53.365 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:44:53.365 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 7.5566ms
+2023-11-25 09:44:53.365 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:53.366 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 48 - 401 - application/problem+json;+charset=utf-8 8.4496ms
+2023-11-25 09:44:59.507 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:44:59.507 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:59.507 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.4829ms
+2023-11-25 09:44:59.509 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 31
+2023-11-25 09:44:59.509 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:44:59.510 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:59.510 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:44:59.511 +01:00 [Information] Login attempt with Username: d
+2023-11-25 09:44:59.511 +01:00 [Information] Database query initiated: Checking username: d for existence and mathcing password in database
+2023-11-25 09:44:59.515 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:44:59.520 +01:00 [Warning] Login failed: Username: d
+2023-11-25 09:44:59.520 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:44:59.520 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 10.511ms
+2023-11-25 09:44:59.521 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:44:59.521 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 31 - 401 - application/problem+json;+charset=utf-8 11.5073ms
+2023-11-25 09:45:11.773 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/register - -
+2023-11-25 09:45:11.774 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:45:11.774 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/register - - - 204 - - 0.7223ms
+2023-11-25 09:45:11.776 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/register application/json 37
+2023-11-25 09:45:11.776 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:45:11.777 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Register (Oblig2.API)"'
+2023-11-25 09:45:11.786 +01:00 [Information] Route matched with "{action = \"Register\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Oblig2.API.DTO.UserRegistrationDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:45:11.792 +01:00 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2023-11-25 09:45:11.799 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Register (Oblig2.API)" in 12.6909ms
+2023-11-25 09:45:11.799 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Register (Oblig2.API)"'
+2023-11-25 09:45:11.799 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/register application/json 37 - 400 - application/problem+json;+charset=utf-8 22.5570ms
+2023-11-25 09:45:41.964 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:45:41.964 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:45:41.966 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 1.9356ms
+2023-11-25 09:45:41.968 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 41
+2023-11-25 09:45:41.968 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:45:41.968 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:45:41.969 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:45:41.969 +01:00 [Information] Login attempt with Username: sdfsdf
+2023-11-25 09:45:41.969 +01:00 [Information] Database query initiated: Checking username: sdfsdf for existence and mathcing password in database
+2023-11-25 09:45:41.973 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 09:45:41.974 +01:00 [Warning] Login failed: Username: sdfsdf
+2023-11-25 09:45:41.974 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:45:41.975 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 6.0769ms
+2023-11-25 09:45:41.975 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:45:41.975 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 41 - 401 - application/problem+json;+charset=utf-8 7.2253ms
+2023-11-25 09:51:50.246 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 09:51:50.247 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:51:50.247 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.5604ms
+2023-11-25 09:51:50.249 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 62
+2023-11-25 09:51:50.249 +01:00 [Information] CORS policy execution successful.
+2023-11-25 09:51:50.249 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:51:50.250 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 09:51:50.251 +01:00 [Information] Login attempt with Username: kincetube30@gmail.com
+2023-11-25 09:51:50.251 +01:00 [Information] Database query initiated: Checking username: kincetube30@gmail.com for existence and mathcing password in database
+2023-11-25 09:51:50.266 +01:00 [Warning] Database login operation failed: No matching passowrds in database
+2023-11-25 09:51:50.266 +01:00 [Warning] Login failed: Username: kincetube30@gmail.com
+2023-11-25 09:51:50.266 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 09:51:50.266 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 16.5429ms
+2023-11-25 09:51:50.266 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 09:51:50.267 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 62 - 401 - application/problem+json;+charset=utf-8 17.8042ms
+2023-11-25 10:07:36.118 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 10:07:36.118 +01:00 [Information] CORS policy execution successful.
+2023-11-25 10:07:36.118 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.6994ms
+2023-11-25 10:07:36.120 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 40
+2023-11-25 10:07:36.121 +01:00 [Information] CORS policy execution successful.
+2023-11-25 10:07:36.121 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 10:07:36.122 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 10:07:36.123 +01:00 [Information] Login attempt with Username: sdasd
+2023-11-25 10:07:36.123 +01:00 [Information] Database query initiated: Checking username: sdasd for existence and mathcing password in database
+2023-11-25 10:07:36.136 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 10:07:36.137 +01:00 [Warning] Login failed: Username: sdasd
+2023-11-25 10:07:36.137 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 10:07:36.137 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 15.7428ms
+2023-11-25 10:07:36.137 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 10:07:36.139 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 40 - 401 - application/problem+json;+charset=utf-8 18.6965ms
+2023-11-25 10:07:57.732 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 10:07:57.732 +01:00 [Information] CORS policy execution successful.
+2023-11-25 10:07:57.733 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 0.4232ms
+2023-11-25 10:07:57.734 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 31
+2023-11-25 10:07:57.735 +01:00 [Information] CORS policy execution successful.
+2023-11-25 10:07:57.735 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 10:07:57.735 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 10:07:57.736 +01:00 [Information] Login attempt with Username: d
+2023-11-25 10:07:57.736 +01:00 [Information] Database query initiated: Checking username: d for existence and mathcing password in database
+2023-11-25 10:07:57.739 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 10:07:57.739 +01:00 [Warning] Login failed: Username: d
+2023-11-25 10:07:57.739 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 10:07:57.740 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 4.4723ms
+2023-11-25 10:07:57.740 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 10:07:57.740 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 31 - 401 - application/problem+json;+charset=utf-8 5.4559ms
+2023-11-25 10:08:03.677 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 10:08:03.677 +01:00 [Information] CORS policy execution successful.
+2023-11-25 10:08:03.678 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 1.1120ms
+2023-11-25 10:08:03.680 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 33
+2023-11-25 10:08:03.680 +01:00 [Information] CORS policy execution successful.
+2023-11-25 10:08:03.680 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 10:08:03.681 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 10:08:03.681 +01:00 [Information] Login attempt with Username: ds
+2023-11-25 10:08:03.681 +01:00 [Information] Database query initiated: Checking username: ds for existence and mathcing password in database
+2023-11-25 10:08:03.686 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 10:08:03.688 +01:00 [Warning] Login failed: Username: ds
+2023-11-25 10:08:03.688 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 10:08:03.688 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 7.7911ms
+2023-11-25 10:08:03.689 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 10:08:03.689 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 33 - 401 - application/problem+json;+charset=utf-8 8.5713ms
+2023-11-25 11:21:22.487 +01:00 [Information] Application is shutting down...

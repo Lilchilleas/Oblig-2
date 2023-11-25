@@ -4,13 +4,19 @@
   {{errorMessage}}
 </div>
 <form #loginForm="ngForm" (ngSubmit)="login()">
+
   <div class="form-group">
-    <label for="exampleInputEmail1">Username</label>
-    <input type="text" class="form-control" name="username" placeholder="Enter username" required [(ngModel)]="model.username">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" name="username"  placeholder="Enter username" required [(ngModel)]="model.username">
+    <div *ngIf="loginForm.form.get('username')?.invalid && (loginForm.form.get('username')?.dirty || loginForm.form.get('username')?.touched)">Username is required</div>
   </div>
+
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" name="password" placeholder="Password" required [(ngModel)]="model.password">
+    <div *ngIf="loginForm.form.get('password')?.invalid && (loginForm.form.get('password')?.dirty || loginForm.form.get('password')?.touched)">Password is required</div>
   </div>
-  <button [disabled]="!loginForm.valid " type="submit" class="btn btn-primary">Submit</button>
+
+  <button [disabled]="!loginForm.valid" type="submit" class="btn btn-primary">Submit</button>
+
 </form>
