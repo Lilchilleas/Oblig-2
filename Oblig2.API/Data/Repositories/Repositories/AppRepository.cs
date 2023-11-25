@@ -78,8 +78,10 @@ namespace Oblig2.API.Data
             
                 if(comment.ParentCommentId != null)
                 {
-                    var parentComment = await _db.Comments .FindAsync(comment.ParentCommentId);
+                    var parentComment = await _db.Comments.FindAsync(comment.ParentCommentId);
+
                     if(parentComment == null){
+                        _logger.LogInformation($"HERE");
                         _logger.LogWarning($"Database create operation failed: No parent commend found with Id: {comment.ParentCommentId}");
                         return false;
                     }
@@ -163,10 +165,12 @@ namespace Oblig2.API.Data
                         .ThenInclude(r => r.CreatedBy) 
                 .FirstOrDefaultAsync(x => x.Id == id);
 
+ 
                 if(discussion == null){
                     _logger.LogWarning("Database get operation failed: Attempted to get single discussion with null object");
                     return null;
                 }
+                discussion.Comments = discussion.Comments.Where(c => c.ParentCommentId == null).ToList();
                 _logger.LogInformation($"Database get operation succesfull with Id: {id}");
                 return discussion;
             }catch(Exception e){

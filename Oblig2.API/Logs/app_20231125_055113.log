@@ -1,0 +1,660 @@
+2023-11-25 05:51:18.138 +01:00 [Information] Database query initiated: Register user with username: pavlovicachilleas@gmail.com
+2023-11-25 05:51:18.505 +01:00 [Information] Database register operation succesfull with username: pavlovicachilleas@gmail.com
+2023-11-25 05:51:18.505 +01:00 [Information] Database query initiated: Register user with username: kincetube30@gmail.com
+2023-11-25 05:51:18.519 +01:00 [Information] Database register operation succesfull with username: kincetube30@gmail.com
+2023-11-25 05:51:18.520 +01:00 [Information] Database query initiated: Register user with username: lilchilleas@gmail.com
+2023-11-25 05:51:18.524 +01:00 [Information] Database register operation succesfull with username: lilchilleas@gmail.com
+2023-11-25 05:51:19.787 +01:00 [Information] User profile is available. Using '"C:\Users\pavlo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-25 05:51:20.844 +01:00 [Information] Now listening on: "http://localhost:5000"
+2023-11-25 05:51:20.845 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-11-25 05:51:20.845 +01:00 [Information] Hosting environment: "Development"
+2023-11-25 05:51:20.845 +01:00 [Information] Content root path: "C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API"
+2023-11-25 05:51:25.375 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:51:25.508 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:51:25.514 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 145.5101ms
+2023-11-25 05:51:25.527 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:51:25.539 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:51:26.000 +01:00 [Warning] Failed to determine the https port for redirect.
+2023-11-25 05:51:26.007 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:51:26.031 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:51:26.127 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:51:26.132 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:51:26.253 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:51:26.260 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:51:26.278 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:51:26.358 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 317.4492ms
+2023-11-25 05:51:26.358 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:51:26.368 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 840.3893ms
+2023-11-25 05:51:55.719 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:51:55.721 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:51:55.721 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 2.7183ms
+2023-11-25 05:51:55.724 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:51:55.725 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:51:55.732 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:51:55.733 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:51:55.735 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:51:55.735 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:51:55.851 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:51:55.851 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:51:55.853 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:51:55.856 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 121.9203ms
+2023-11-25 05:51:55.856 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:51:55.857 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 133.4888ms
+2023-11-25 05:52:18.301 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:52:18.301 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:52:18.302 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.5684ms
+2023-11-25 05:52:18.304 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:52:18.304 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:52:18.309 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:52:18.310 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:52:18.314 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:52:18.314 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:52:18.317 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:52:18.317 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:52:18.318 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:52:18.318 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 8.6766ms
+2023-11-25 05:52:18.319 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:52:18.319 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 15.1886ms
+2023-11-25 05:52:37.984 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:52:37.984 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:52:37.984 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.5174ms
+2023-11-25 05:52:37.993 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:52:37.993 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:52:37.994 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:52:37.994 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:52:37.995 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:52:37.995 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:52:37.997 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:52:37.997 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:52:37.997 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:52:37.998 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 3.4885ms
+2023-11-25 05:52:37.998 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:52:37.998 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 5.3399ms
+2023-11-25 05:52:39.503 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:52:39.505 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:52:39.505 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 2.1563ms
+2023-11-25 05:52:39.510 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:52:39.510 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:52:39.511 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:52:39.540 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:52:39.562 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 05:52:39.565 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 05:52:39.713 +01:00 [Warning] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-11-25 05:52:39.749 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 05:52:39.751 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 05:52:39.752 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:52:39.763 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 223.4062ms
+2023-11-25 05:52:39.763 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:52:39.764 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 253.7059ms
+2023-11-25 05:54:21.241 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:54:21.241 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:21.242 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.7995ms
+2023-11-25 05:54:21.244 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:54:21.244 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:21.245 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:54:21.245 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:21.248 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 05:54:21.248 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 05:54:21.264 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 05:54:21.265 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 05:54:21.267 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:54:21.268 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 22.775ms
+2023-11-25 05:54:21.268 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:54:21.269 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 25.0713ms
+2023-11-25 05:54:31.393 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:54:31.393 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:31.394 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.7706ms
+2023-11-25 05:54:31.396 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:54:31.397 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:31.397 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:31.397 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:31.398 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:54:31.398 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:54:31.401 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:54:31.401 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:54:31.403 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:54:31.406 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 8.1935ms
+2023-11-25 05:54:31.406 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:31.407 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 10.1180ms
+2023-11-25 05:54:46.694 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:54:46.694 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:46.695 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 1.0646ms
+2023-11-25 05:54:46.729 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:54:46.729 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:46.730 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:46.730 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:46.730 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:54:46.731 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:54:46.734 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:54:46.734 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:54:46.734 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:54:46.734 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 4.1151ms
+2023-11-25 05:54:46.734 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:46.735 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 5.6073ms
+2023-11-25 05:54:47.883 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:54:47.883 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:47.884 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 1.7280ms
+2023-11-25 05:54:47.888 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:54:47.889 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:47.889 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:54:47.889 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:47.890 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 05:54:47.890 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 05:54:47.896 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 05:54:47.896 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 05:54:47.897 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:54:47.897 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 7.4243ms
+2023-11-25 05:54:47.897 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:54:47.897 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 8.9925ms
+2023-11-25 05:54:48.702 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:54:48.703 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:48.703 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:48.704 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:48.708 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:54:48.708 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:54:48.710 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:54:48.710 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:54:48.711 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:54:48.712 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 7.707ms
+2023-11-25 05:54:48.712 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:48.713 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 9.9967ms
+2023-11-25 05:54:49.353 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - -
+2023-11-25 05:54:49.353 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:49.353 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - - - 204 - - 0.6718ms
+2023-11-25 05:54:49.363 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/2 - -
+2023-11-25 05:54:49.364 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:49.364 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:54:49.364 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:49.365 +01:00 [Information] Acquiring to get discussion with Id: 2
+2023-11-25 05:54:49.365 +01:00 [Information] Database query initiated: Fetching discussion with ID: 2
+2023-11-25 05:54:49.370 +01:00 [Information] Database get operation succesfull with Id: 2
+2023-11-25 05:54:49.370 +01:00 [Information] Retrieved discussion with Id: 2
+2023-11-25 05:54:49.370 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:54:49.370 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 5.7318ms
+2023-11-25 05:54:49.370 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:54:49.370 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/2 - - - 200 - application/json;+charset=utf-8 7.0158ms
+2023-11-25 05:54:50.716 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:54:50.716 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:54:50.718 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:50.718 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:54:50.719 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:54:50.720 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:54:50.731 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:54:50.731 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:54:50.732 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:54:50.732 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 13.7313ms
+2023-11-25 05:54:50.732 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:54:50.733 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 16.9488ms
+2023-11-25 05:55:34.321 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:55:34.321 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:55:34.322 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.5209ms
+2023-11-25 05:55:34.324 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:55:34.324 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:55:34.325 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:55:34.325 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:55:34.326 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:55:34.326 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:55:34.328 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:55:34.328 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:55:34.329 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:55:34.329 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 3.7148ms
+2023-11-25 05:55:34.330 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:55:34.331 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 6.8235ms
+2023-11-25 05:56:55.113 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:56:55.113 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:56:55.113 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.5724ms
+2023-11-25 05:56:55.117 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:56:55.117 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:56:55.118 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:56:55.118 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:56:55.118 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:56:55.118 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:56:55.120 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:56:55.121 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:56:55.121 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:56:55.122 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 3.6399ms
+2023-11-25 05:56:55.122 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:56:55.122 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 5.0473ms
+2023-11-25 05:57:02.279 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 05:57:02.279 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:02.279 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.7170ms
+2023-11-25 05:57:02.365 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:57:02.366 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:02.366 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:57:02.367 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:02.369 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:57:02.369 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:57:02.371 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:57:02.371 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:57:02.371 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:57:02.374 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 6.7887ms
+2023-11-25 05:57:02.374 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:57:02.374 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 8.9215ms
+2023-11-25 05:57:04.952 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 05:57:04.954 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:04.956 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:57:04.956 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:04.956 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 05:57:04.956 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 05:57:04.959 +01:00 [Information] Database get operation succesfull
+2023-11-25 05:57:04.960 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 05:57:04.960 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 05:57:04.960 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 4.3147ms
+2023-11-25 05:57:04.960 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 05:57:04.961 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 8.5431ms
+2023-11-25 05:57:06.013 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:57:06.014 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:06.014 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.9080ms
+2023-11-25 05:57:06.017 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:57:06.017 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:06.018 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:57:06.018 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:06.019 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 05:57:06.020 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 05:57:06.046 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 05:57:06.046 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 05:57:06.047 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:57:06.048 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 30.1536ms
+2023-11-25 05:57:06.048 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:57:06.048 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 31.7744ms
+2023-11-25 05:57:07.871 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1/CreateComment - -
+2023-11-25 05:57:07.871 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:07.872 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1/CreateComment - - - 204 - - 0.9179ms
+2023-11-25 05:57:07.874 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/discussion/1/CreateComment application/json 55
+2023-11-25 05:57:07.874 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:07.884 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 05:57:07.898 +01:00 [Information] Route matched with "{action = \"CreateComment\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Comment]] CreateComment(Int32, Oblig2.API.DTO.CreateCommentDto)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:07.934 +01:00 [Information] Acquiring to create a commment initiated by the UserId: 2
+2023-11-25 05:57:07.936 +01:00 [Information] Database query initiated: Creating comment with discussion ID: 1
+2023-11-25 05:57:07.972 +01:00 [Information] Database creation of comment operation succesfull for Discussion Id: 1 by User 2
+2023-11-25 05:57:07.972 +01:00 [Information] Comment created successfully
+2023-11-25 05:57:07.973 +01:00 [Information] Executing "ObjectResult", writing value of type '"Oblig2.API.DTO.CommentDto"'.
+2023-11-25 05:57:07.973 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)" in 75.029ms
+2023-11-25 05:57:07.973 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 05:57:07.973 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/discussion/1/CreateComment application/json 55 - 201 - application/json;+charset=utf-8 99.3858ms
+2023-11-25 05:57:09.038 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:57:09.038 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:09.047 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:57:09.047 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:09.049 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 05:57:09.050 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 05:57:09.058 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 05:57:09.058 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 05:57:09.068 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:57:09.068 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 21.209ms
+2023-11-25 05:57:09.068 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:57:09.068 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 30.7053ms
+2023-11-25 05:57:10.815 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/discussion/1/CreateComment application/json 52
+2023-11-25 05:57:10.816 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:10.817 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 05:57:10.817 +01:00 [Information] Route matched with "{action = \"CreateComment\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Comment]] CreateComment(Int32, Oblig2.API.DTO.CreateCommentDto)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:10.820 +01:00 [Information] Acquiring to create a commment initiated by the UserId: 2
+2023-11-25 05:57:10.820 +01:00 [Information] Database query initiated: Creating comment with discussion ID: 1
+2023-11-25 05:57:10.858 +01:00 [Information] Database creation of comment operation succesfull for Discussion Id: 1 by User 2
+2023-11-25 05:57:10.858 +01:00 [Information] Comment created successfully
+2023-11-25 05:57:10.858 +01:00 [Information] Executing "ObjectResult", writing value of type '"Oblig2.API.DTO.CommentDto"'.
+2023-11-25 05:57:10.861 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)" in 43.8136ms
+2023-11-25 05:57:10.861 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 05:57:10.861 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/discussion/1/CreateComment application/json 52 - 201 - application/json;+charset=utf-8 45.5180ms
+2023-11-25 05:57:11.961 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:57:11.961 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:11.962 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.8874ms
+2023-11-25 05:57:11.967 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 05:57:11.968 +01:00 [Information] CORS policy execution successful.
+2023-11-25 05:57:11.968 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:57:11.968 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 05:57:11.969 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 05:57:11.969 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 05:57:11.975 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 05:57:11.975 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 05:57:11.975 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 05:57:11.976 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 7.2972ms
+2023-11-25 05:57:11.976 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 05:57:11.976 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 9.0083ms
+2023-11-25 06:00:09.398 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:00:09.398 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:00:09.398 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.4223ms
+2023-11-25 06:00:09.401 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:00:09.401 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:00:09.402 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:00:09.402 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:00:09.402 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:00:09.403 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:00:09.407 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:00:09.407 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:00:09.408 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:00:09.412 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 9.3749ms
+2023-11-25 06:00:09.412 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:00:09.413 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 11.7446ms
+2023-11-25 06:02:07.959 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:02:07.960 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:02:07.960 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.4414ms
+2023-11-25 06:02:07.962 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:02:07.963 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:02:07.963 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:02:07.963 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:02:07.964 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:02:07.964 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:02:07.972 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:02:07.972 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:02:07.972 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:02:07.974 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 9.9842ms
+2023-11-25 06:02:07.974 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:02:07.974 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 11.6504ms
+2023-11-25 06:02:54.963 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:02:54.964 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:02:54.964 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.3214ms
+2023-11-25 06:02:54.966 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:02:54.966 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:02:54.966 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:02:54.966 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:02:54.967 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:02:54.967 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:02:54.973 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:02:54.975 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:02:54.975 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:02:54.975 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 8.8911ms
+2023-11-25 06:02:54.976 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:02:54.976 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 10.6196ms
+2023-11-25 06:03:07.498 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:03:07.498 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:03:07.498 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.3598ms
+2023-11-25 06:03:07.500 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:03:07.501 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:03:07.501 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:03:07.501 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:03:07.501 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:03:07.501 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:03:07.510 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:03:07.510 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:03:07.511 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:03:07.511 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 10.3735ms
+2023-11-25 06:03:07.512 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:03:07.512 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 11.6579ms
+2023-11-25 06:07:04.602 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:07:04.602 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:07:04.602 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.3354ms
+2023-11-25 06:07:04.605 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:07:04.605 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:07:04.605 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:07:04.605 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:07:04.606 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:07:04.607 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:07:04.618 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:07:04.618 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:07:04.618 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:07:04.619 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 13.1286ms
+2023-11-25 06:07:04.619 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:07:04.619 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 14.3972ms
+2023-11-25 06:07:07.565 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:07:07.565 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:07:07.565 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:07:07.565 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:07:07.566 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:07:07.566 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:07:07.571 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:07:07.571 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:07:07.572 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:07:07.572 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 6.7877ms
+2023-11-25 06:07:07.572 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:07:07.573 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 8.1077ms
+2023-11-25 06:07:44.986 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:07:44.987 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:07:44.987 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.5208ms
+2023-11-25 06:07:44.989 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:07:44.989 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:07:44.990 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:07:44.990 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:07:44.991 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:07:44.991 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:07:44.999 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:07:45.000 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:07:45.000 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:07:45.001 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 11.2167ms
+2023-11-25 06:07:45.002 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:07:45.002 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 12.7204ms
+2023-11-25 06:08:19.601 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:08:19.601 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:19.601 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/1 - - - 204 - - 0.3302ms
+2023-11-25 06:08:19.603 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/1 - -
+2023-11-25 06:08:19.603 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:19.604 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:08:19.604 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:08:19.605 +01:00 [Information] Acquiring to get discussion with Id: 1
+2023-11-25 06:08:19.605 +01:00 [Information] Database query initiated: Fetching discussion with ID: 1
+2023-11-25 06:08:19.618 +01:00 [Information] Database get operation succesfull with Id: 1
+2023-11-25 06:08:19.620 +01:00 [Information] Retrieved discussion with Id: 1
+2023-11-25 06:08:19.620 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:08:19.620 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 16.1668ms
+2023-11-25 06:08:19.621 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:08:19.621 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/1 - - - 200 - application/json;+charset=utf-8 17.3893ms
+2023-11-25 06:08:45.097 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/register - -
+2023-11-25 06:08:45.098 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:45.098 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/register - - - 204 - - 0.4688ms
+2023-11-25 06:08:45.100 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/register application/json 56
+2023-11-25 06:08:45.102 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:45.102 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Register (Oblig2.API)"'
+2023-11-25 06:08:45.112 +01:00 [Information] Route matched with "{action = \"Register\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Oblig2.API.DTO.UserRegistrationDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 06:08:45.128 +01:00 [Information] Registration attempt to create a user with the Username: gordana@gmail.com
+2023-11-25 06:08:45.130 +01:00 [Information] Database query initiated: Checking existence of username: gordana@gmail.com in database
+2023-11-25 06:08:45.187 +01:00 [Information] Database user exist operation failed with username: gordana@gmail.com
+2023-11-25 06:08:45.188 +01:00 [Information] Database query initiated: Register user with username: gordana@gmail.com
+2023-11-25 06:08:45.202 +01:00 [Information] Database register operation succesfull with username: gordana@gmail.com
+2023-11-25 06:08:45.203 +01:00 [Information] User: gordana@gmail.com registered successfully
+2023-11-25 06:08:45.216 +01:00 [Information] Executing StatusCodeResult, setting HTTP status code 201
+2023-11-25 06:08:45.216 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Register (Oblig2.API)" in 103.9348ms
+2023-11-25 06:08:45.217 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Register (Oblig2.API)"'
+2023-11-25 06:08:45.217 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/register application/json 56 - 201 0 - 117.0082ms
+2023-11-25 06:08:56.095 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - -
+2023-11-25 06:08:56.097 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:56.097 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - - - 204 - - 2.2847ms
+2023-11-25 06:08:56.100 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 56
+2023-11-25 06:08:56.101 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:56.101 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 06:08:56.109 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 06:08:56.122 +01:00 [Information] Login attempt with Username: gordana@gmail.com
+2023-11-25 06:08:56.125 +01:00 [Information] Database query initiated: Checking username: gordana@gmail.com for existence and mathcing password in database
+2023-11-25 06:08:56.136 +01:00 [Information] Database login operation succesfull with username: gordana@gmail.com and verified password
+2023-11-25 06:08:56.165 +01:00 [Information] User: gordana@gmail.com logged in successfully
+2023-11-25 06:08:56.177 +01:00 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2023-11-25 06:08:56.180 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 70.7004ms
+2023-11-25 06:08:56.180 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 06:08:56.180 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 56 - 200 - application/json;+charset=utf-8 80.0145ms
+2023-11-25 06:08:56.251 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 06:08:56.251 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:56.251 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.3326ms
+2023-11-25 06:08:56.257 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 06:08:56.257 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:56.258 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:08:56.258 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:08:56.258 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 06:08:56.258 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 06:08:56.261 +01:00 [Information] Database get operation succesfull
+2023-11-25 06:08:56.263 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 06:08:56.263 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 06:08:56.266 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 7.7162ms
+2023-11-25 06:08:56.266 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:08:56.266 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 9.1533ms
+2023-11-25 06:08:59.308 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:08:59.308 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:59.308 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - - - 204 - - 0.5109ms
+2023-11-25 06:08:59.311 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:08:59.311 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:08:59.312 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:08:59.312 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:08:59.313 +01:00 [Information] Acquiring to get discussion with Id: 2
+2023-11-25 06:08:59.313 +01:00 [Information] Database query initiated: Fetching discussion with ID: 2
+2023-11-25 06:08:59.316 +01:00 [Information] Database get operation succesfull with Id: 2
+2023-11-25 06:08:59.316 +01:00 [Information] Retrieved discussion with Id: 2
+2023-11-25 06:08:59.317 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:08:59.319 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 6.3554ms
+2023-11-25 06:08:59.319 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:08:59.320 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/2 - - - 200 - application/json;+charset=utf-8 8.8098ms
+2023-11-25 06:09:00.762 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2/CreateComment - -
+2023-11-25 06:09:00.762 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:09:00.762 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2/CreateComment - - - 204 - - 0.7307ms
+2023-11-25 06:09:00.764 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/discussion/2/CreateComment application/json 55
+2023-11-25 06:09:00.765 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:09:00.766 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 06:09:00.766 +01:00 [Information] Route matched with "{action = \"CreateComment\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Comment]] CreateComment(Int32, Oblig2.API.DTO.CreateCommentDto)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:09:00.767 +01:00 [Information] Acquiring to create a commment initiated by the UserId: 4
+2023-11-25 06:09:00.767 +01:00 [Information] Database query initiated: Creating comment with discussion ID: 2
+2023-11-25 06:09:00.776 +01:00 [Information] Database creation of comment operation succesfull for Discussion Id: 2 by User 4
+2023-11-25 06:09:00.777 +01:00 [Information] Comment created successfully
+2023-11-25 06:09:00.777 +01:00 [Information] Executing "ObjectResult", writing value of type '"Oblig2.API.DTO.CommentDto"'.
+2023-11-25 06:09:00.777 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)" in 10.8261ms
+2023-11-25 06:09:00.777 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 06:09:00.777 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/discussion/2/CreateComment application/json 55 - 201 - application/json;+charset=utf-8 12.7399ms
+2023-11-25 06:09:01.826 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:09:01.827 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:09:01.827 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:09:01.827 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:09:01.828 +01:00 [Information] Acquiring to get discussion with Id: 2
+2023-11-25 06:09:01.830 +01:00 [Information] Database query initiated: Fetching discussion with ID: 2
+2023-11-25 06:09:01.839 +01:00 [Information] Database get operation succesfull with Id: 2
+2023-11-25 06:09:01.839 +01:00 [Information] Retrieved discussion with Id: 2
+2023-11-25 06:09:01.839 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:09:01.839 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 11.5525ms
+2023-11-25 06:09:01.846 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:09:01.847 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/2 - - - 200 - application/json;+charset=utf-8 20.6862ms
+2023-11-25 06:09:05.091 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/discussion/2/CreateComment application/json 52
+2023-11-25 06:09:05.091 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:09:05.092 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 06:09:05.092 +01:00 [Information] Route matched with "{action = \"CreateComment\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Comment]] CreateComment(Int32, Oblig2.API.DTO.CreateCommentDto)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:09:05.093 +01:00 [Information] Acquiring to create a commment initiated by the UserId: 4
+2023-11-25 06:09:05.093 +01:00 [Information] Database query initiated: Creating comment with discussion ID: 2
+2023-11-25 06:09:05.104 +01:00 [Information] Database creation of comment operation succesfull for Discussion Id: 2 by User 4
+2023-11-25 06:09:05.104 +01:00 [Information] Comment created successfully
+2023-11-25 06:09:05.104 +01:00 [Information] Executing "ObjectResult", writing value of type '"Oblig2.API.DTO.CommentDto"'.
+2023-11-25 06:09:05.104 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)" in 12.1041ms
+2023-11-25 06:09:05.104 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.CreateComment (Oblig2.API)"'
+2023-11-25 06:09:05.105 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/discussion/2/CreateComment application/json 52 - 201 - application/json;+charset=utf-8 13.6748ms
+2023-11-25 06:09:06.148 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:09:06.148 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:09:06.148 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - - - 204 - - 0.5942ms
+2023-11-25 06:09:06.152 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:09:06.152 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:09:06.153 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:09:06.153 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:09:06.154 +01:00 [Information] Acquiring to get discussion with Id: 2
+2023-11-25 06:09:06.154 +01:00 [Information] Database query initiated: Fetching discussion with ID: 2
+2023-11-25 06:09:06.163 +01:00 [Information] Database get operation succesfull with Id: 2
+2023-11-25 06:09:06.163 +01:00 [Information] Retrieved discussion with Id: 2
+2023-11-25 06:09:06.163 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:09:06.167 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 11.6888ms
+2023-11-25 06:09:06.168 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:09:06.168 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/2 - - - 200 - application/json;+charset=utf-8 15.3934ms
+2023-11-25 06:10:39.442 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:10:39.442 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:39.442 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/2 - - - 204 - - 0.3646ms
+2023-11-25 06:10:39.444 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/2 - -
+2023-11-25 06:10:39.445 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:39.445 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:10:39.445 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:39.446 +01:00 [Information] Acquiring to get discussion with Id: 2
+2023-11-25 06:10:39.446 +01:00 [Information] Database query initiated: Fetching discussion with ID: 2
+2023-11-25 06:10:39.450 +01:00 [Information] Database get operation succesfull with Id: 2
+2023-11-25 06:10:39.451 +01:00 [Information] Retrieved discussion with Id: 2
+2023-11-25 06:10:39.453 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:10:39.454 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 8.256ms
+2023-11-25 06:10:39.456 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:10:39.457 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/2 - - - 200 - application/json;+charset=utf-8 12.1639ms
+2023-11-25 06:10:41.596 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 06:10:41.596 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:41.596 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.3163ms
+2023-11-25 06:10:41.601 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 06:10:41.601 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:41.601 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:10:41.601 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:41.603 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 06:10:41.603 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 06:10:41.605 +01:00 [Information] Database get operation succesfull
+2023-11-25 06:10:41.606 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 06:10:41.606 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 06:10:41.606 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 4.3626ms
+2023-11-25 06:10:41.606 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:10:41.606 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 5.8266ms
+2023-11-25 06:10:44.569 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/CreateDiscussion - -
+2023-11-25 06:10:44.569 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:44.569 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/CreateDiscussion - - - 204 - - 0.1949ms
+2023-11-25 06:10:44.570 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/discussion/CreateDiscussion application/json 34
+2023-11-25 06:10:44.570 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:44.571 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.CreateDiscussion (Oblig2.API)"'
+2023-11-25 06:10:44.575 +01:00 [Information] Route matched with "{action = \"CreateDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] CreateDiscussion(Oblig2.API.DTO.CreateDiscussionDto)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:44.582 +01:00 [Information] Acquiring to create a discussion initiated by the UserId: 4
+2023-11-25 06:10:44.584 +01:00 [Information] Database query initiated: Creating discussion with ID: 0
+2023-11-25 06:10:44.595 +01:00 [Information] Database creation operation succesfull with Id: 3 and User: gordana@gmail.com
+2023-11-25 06:10:44.595 +01:00 [Information] Discussion created successfully
+2023-11-25 06:10:44.595 +01:00 [Information] Executing "ObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:10:44.595 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.CreateDiscussion (Oblig2.API)" in 20.4864ms
+2023-11-25 06:10:44.596 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.CreateDiscussion (Oblig2.API)"'
+2023-11-25 06:10:44.596 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/discussion/CreateDiscussion application/json 34 - 201 - application/json;+charset=utf-8 25.3779ms
+2023-11-25 06:10:44.647 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 06:10:44.650 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:44.651 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:10:44.651 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:44.651 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 06:10:44.651 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 06:10:44.654 +01:00 [Information] Database get operation succesfull
+2023-11-25 06:10:44.654 +01:00 [Information] Retrieved all discussions | Amount: 3 discussions
+2023-11-25 06:10:44.655 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 06:10:44.656 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 5.1306ms
+2023-11-25 06:10:44.657 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:10:44.657 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 9.5288ms
+2023-11-25 06:10:46.148 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/3 - -
+2023-11-25 06:10:46.148 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:46.149 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/3 - - - 204 - - 0.5557ms
+2023-11-25 06:10:46.152 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/3 - -
+2023-11-25 06:10:46.152 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:46.153 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:10:46.153 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:46.153 +01:00 [Information] Acquiring to get discussion with Id: 3
+2023-11-25 06:10:46.153 +01:00 [Information] Database query initiated: Fetching discussion with ID: 3
+2023-11-25 06:10:46.156 +01:00 [Information] Database get operation succesfull with Id: 3
+2023-11-25 06:10:46.156 +01:00 [Information] Retrieved discussion with Id: 3
+2023-11-25 06:10:46.156 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:10:46.157 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 3.7345ms
+2023-11-25 06:10:46.157 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:10:46.157 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/3 - - - 200 - application/json;+charset=utf-8 4.4888ms
+2023-11-25 06:10:47.673 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion/3 - -
+2023-11-25 06:10:47.673 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:47.673 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:10:47.673 +01:00 [Information] Route matched with "{action = \"GetDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Oblig2.API.Models.Discussion]] GetDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:47.674 +01:00 [Information] Acquiring to get discussion with Id: 3
+2023-11-25 06:10:47.674 +01:00 [Information] Database query initiated: Fetching discussion with ID: 3
+2023-11-25 06:10:47.678 +01:00 [Information] Database get operation succesfull with Id: 3
+2023-11-25 06:10:47.678 +01:00 [Information] Retrieved discussion with Id: 3
+2023-11-25 06:10:47.678 +01:00 [Information] Executing "OkObjectResult", writing value of type '"Oblig2.API.DTO.DiscussionDto"'.
+2023-11-25 06:10:47.678 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)" in 5.0018ms
+2023-11-25 06:10:47.678 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussion (Oblig2.API)"'
+2023-11-25 06:10:47.679 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion/3 - - - 200 - application/json;+charset=utf-8 6.0271ms
+2023-11-25 06:10:48.488 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/3 - -
+2023-11-25 06:10:48.488 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:48.488 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion/3 - - - 204 - - 0.2293ms
+2023-11-25 06:10:48.489 +01:00 [Information] Request starting HTTP/1.1 DELETE http://localhost:5000/api/discussion/3 - -
+2023-11-25 06:10:48.489 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:48.490 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.DeleteDiscussion (Oblig2.API)"'
+2023-11-25 06:10:48.494 +01:00 [Information] Route matched with "{action = \"DeleteDiscussion\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteDiscussion(Int32)" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:48.495 +01:00 [Information] Acquiring to delete a discussion with the Id: 3
+2023-11-25 06:10:48.499 +01:00 [Information] Database query initiated: Deleting discussion with ID: 3
+2023-11-25 06:10:48.538 +01:00 [Information] Database delete operation succesfull with Id: 3
+2023-11-25 06:10:48.538 +01:00 [Information] Discussion deleted successfully
+2023-11-25 06:10:48.538 +01:00 [Information] Executing StatusCodeResult, setting HTTP status code 200
+2023-11-25 06:10:48.538 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.DeleteDiscussion (Oblig2.API)" in 44.847ms
+2023-11-25 06:10:48.539 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.DeleteDiscussion (Oblig2.API)"'
+2023-11-25 06:10:48.539 +01:00 [Information] Request finished HTTP/1.1 DELETE http://localhost:5000/api/discussion/3 - - - 200 0 - 49.3801ms
+2023-11-25 06:10:48.565 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-25 06:10:48.566 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:48.566 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 0.2497ms
+2023-11-25 06:10:48.570 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-25 06:10:48.571 +01:00 [Information] CORS policy execution successful.
+2023-11-25 06:10:48.571 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:10:48.571 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-25 06:10:48.572 +01:00 [Information] Acquiring to get all discussions
+2023-11-25 06:10:48.572 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-25 06:10:48.574 +01:00 [Information] Database get operation succesfull
+2023-11-25 06:10:48.574 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-25 06:10:48.574 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-25 06:10:48.574 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 2.5482ms
+2023-11-25 06:10:48.574 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-25 06:10:48.575 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 4.2089ms

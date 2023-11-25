@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
+import { DiscussionDto } from '../models/discussion-dto';
+import { CreateDiscussionDto } from '../models/createDiscussion-dto';
+import { CreateCommentDto } from '../models/createComment-dto';
+import { CommentDto } from '../models/comment-dto';
+import { UpdateDiscussionDto } from '../models/updateDiscussion-dto';
 
 
 
@@ -20,29 +25,27 @@ export class DiscussionService {
   constructor(private http: HttpClient) { }
 
   //Methods
-  getDiscussions(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}`).pipe(
-      map(response => response)
-    );
+  getDiscussions(): Observable<DiscussionDto> {
+    return this.http.get<DiscussionDto>(`${this.apiUrl}`);
   }
 
-  getDiscussion(id: number): Observable<any>{
-    return this.http.get<any>(`${this.apiUrl}/${id}`);
+  getDiscussion(id: number): Observable<DiscussionDto>{
+    return this.http.get<DiscussionDto>(`${this.apiUrl}/${id}`);
   }
 
-  createDiscussion(discussion: any): Observable<any>{
-    return this.http.post<any>(`${this.apiUrl}/CreateDiscussion`,discussion);
+  createDiscussion(discussion: CreateDiscussionDto): Observable<DiscussionDto>{
+    return this.http.post<DiscussionDto>(`${this.apiUrl}/CreateDiscussion`,discussion);
   }
 
-  createComment(id: number, comment: any): Observable<any>{
+  createComment(id: number, comment: CreateCommentDto): Observable<CommentDto>{
     return this.http.post<any>(`${this.apiUrl}/${id}/CreateComment`,comment);
   }
 
-  updateComment(id: number, updatedDiscussion: any){
+  updateComment(id: number, updatedDiscussion: UpdateDiscussionDto): Observable<DiscussionDto>{
     return this.http.put<any>(`${this.apiUrl}/${id}`,updatedDiscussion);
   }
 
-  deleteDiscussion(id: number){
+  deleteDiscussion(id: number):Observable<void>{
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
 

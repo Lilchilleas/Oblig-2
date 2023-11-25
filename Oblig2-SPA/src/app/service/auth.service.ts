@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
+import { LoginDto } from '../models/login-dto';
+import { RegisterDto } from '../models/register-dto';
 
 @Injectable({
   providedIn: 'root'
@@ -15,14 +17,14 @@ export class AuthService {
   jwtHelper = new JwtHelperService();
   decodedToken: any;
 
-
-
-
   //Constructor
   constructor(private http: HttpClient) { }
 
   //Methods
-  login(model: any){
+
+  //The Login angular implementation with the use of token is created based on the implemntation from:
+  //"Angular Authentication With JSON Web Tokens (JWT): The Complete Guide" by ANGULAR UNIVERSITY.
+  login(model: LoginDto): Observable<void>{
     return this.http.post(`${this.apiUrl}/login`,model).pipe(
       map((response: any) => {
         const user = response;
@@ -36,10 +38,12 @@ export class AuthService {
   }
 
 
-  register(model: any){
+  register(model: RegisterDto): Observable<any>{
     return this.http.post(`${this.apiUrl}/register`,model);
   }
  
+
+  //Helper methods
   loggedIn(){
     const token = localStorage.getItem('token');
     return !this.jwtHelper.isTokenExpired(token);
@@ -49,9 +53,15 @@ export class AuthService {
     const token = localStorage.getItem('token');
     if (token && !this.jwtHelper.isTokenExpired(token)) {
       this.decodedToken = this.jwtHelper.decodeToken(token);
-      return this.decodedToken; // Or return specific user details
+      return this.decodedToken; 
     }
     return null;
   }
 
 }
+
+// Source Reference:
+// ------------------------------------------------------------------------
+// - [Title: Angular Authentication With JSON Web Tokens (JWT): The Complete Guide ]
+// - Author: [ANGULAR UNIVERSITY]
+// - URL: [https://blog.angular-university.io/angular-jwt-authentication/]

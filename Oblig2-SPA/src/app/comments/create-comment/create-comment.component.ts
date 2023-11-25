@@ -35,7 +35,7 @@ export class CreateCommentComponent {
 
     const comment = {
       content: this.content,
-      parentCommentId: this.parentCommentId,
+      parentCommentId: this.parentCommentId ?? null,
       subComments: []
     };
 

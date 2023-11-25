@@ -45,9 +45,15 @@ public class DiscussionController : ControllerBase
             _logger.LogWarning("No discussion object found");
             return NotFound();
         }
+
+        var discussionDto = discussions.Select(x => new DiscussionDto{
+            Id = x.Id,
+            Title = x.Title,
+            Content = x.Content
+        }).ToList();
         
         _logger.LogInformation($"Retrieved all discussions | Amount: {discussions.Count} discussions");
-        return Ok(discussions);
+        return Ok(discussionDto);
     }
 
     [AllowAnonymous]
@@ -63,22 +69,61 @@ public class DiscussionController : ControllerBase
             return NotFound();
         }
         
+        var discussionDto = new DiscussionDto{
+            Id = discussion.Id,
+            Title = discussion.Title,
+            Content = discussion.Content,
+            CreatedBy = discussion.CreatedBy != null ? new UserDto{
+                Id = discussion.CreatedBy.Id,
+                Username = discussion.CreatedBy.Username,
+            }: null,
+            Comments = discussion.Comments.Select(x => new CommentDto{
+                Id = x.Id,
+                Content = x.Content,
+                DiscussionId = x.DiscussionId,
+                CreatedBy = x.CreatedBy != null ? new UserDto {
+                    Id = x.CreatedBy.Id,
+                    Username = x.CreatedBy.Username,
+                }:null,
+                Replies = x.Replies.Select(d=> new CommentDto{
+                    Id = d.Id,
+                    Content = d.Content,
+                    DiscussionId = d.DiscussionId,
+                    CreatedBy = d.CreatedBy != null ? new UserDto{
+                        Id = d.CreatedBy.Id,
+                        Username = d.CreatedBy.Username,
+                    } : null
+                }).ToList()
+            }).ToList()
+        };
+            
+
         _logger.LogInformation($"Retrieved discussion with Id: {id}");
-        return Ok(discussion);
+        return Ok(discussionDto);
     }
      
 
  
     [HttpPost("CreateDiscussion")]
-    public async Task<ActionResult<Discussion>> CreateDiscussion(Discussion discussion){
+    public async Task<ActionResult<Discussion>> CreateDiscussion(CreateDiscussionDto createDiscussionDto){
 
         try{
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
             _logger.LogInformation($"Acquiring to create a discussion initiated by the UserId: {userId}");
             
+            var discussion = new Discussion{
+                Title = createDiscussionDto.Title,
+                Content = createDiscussionDto.Content
+            };
+
             if(await _rep.CreateDiscussion(discussion,userId)){
                 _logger.LogInformation("Discussion created successfully");
-                return StatusCode(201);
+                var discussionDto = new DiscussionDto{
+                    Id = discussion.Id,
+                    Title = discussion.Title,
+                    Content = discussion.Content,
+                };
+                return StatusCode(201,discussionDto);
             }else {
                 _logger.LogWarning("Failed to create discussion");
                 return BadRequest("Failed creating a discussion");
@@ -93,15 +138,23 @@ public class DiscussionController : ControllerBase
 
 
     [HttpPost("{id}/CreateComment")]
-    public async Task<ActionResult<Comment>> CreateComment(int id, Comment comment){
+    public async Task<ActionResult<Comment>> CreateComment(int id, CreateCommentDto createCommentDto){
 
         try{
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
             _logger.LogInformation($"Acquiring to create a commment initiated by the UserId: {userId}");
-
+            var comment = new Comment{
+                Content = createCommentDto.Content,
+                ParentCommentId = createCommentDto.ParentCommentId
+            };
             if(await _rep.CreateComment(id,comment,userId)){
                 _logger.LogInformation("Comment created successfully");
-                return StatusCode(201);
+                var commentDto = new CommentDto{
+                    Id = comment.Id,
+                    Content =comment.Content,
+                    ParentCommentId = comment.ParentCommentId,
+                };
+                return StatusCode(201,commentDto);
             }else {
                 _logger.LogWarning("Failed to create comment");
                 return BadRequest("Failed creating a comment");
@@ -110,20 +163,28 @@ public class DiscussionController : ControllerBase
             _logger.LogError( "Error creating comment: ",e);
             return StatusCode(500, "Internal server error");
         }
-         
-
-         
     }
 
     
    [HttpPut("{discussionId}")]
-    public async Task<ActionResult<Discussion>> UpdateDiscussion(int discussionId, Discussion updatedDiscussion){
+    public async Task<ActionResult<Discussion>> UpdateDiscussion(int discussionId, UpdateDiscussionDto updateDiscussionDto){
 
         try{
             _logger.LogInformation($"Acquiring to update a discussion with the Discussion Id: {discussionId}");
+            var updatedDiscussion = new Discussion{
+                Id = discussionId,
+                Title = updateDiscussionDto.Title,
+                Content = updateDiscussionDto.Content
+            };
             if(await _rep.UpdateDiscussion(discussionId, updatedDiscussion)){
                 _logger.LogInformation("Discussion updated successfully");
-                return Ok(updatedDiscussion);
+                var updadeDiscussionDto = new DiscussionDto
+                {
+                    Id = updatedDiscussion.Id,
+                    Title = updatedDiscussion.Title,
+                    Content = updatedDiscussion.Content
+                };
+                return Ok(updateDiscussionDto);
             }else {
                 _logger.LogWarning("Failed to update a discussion");
                 return BadRequest("Failed updating a discussion");
