@@ -1,0 +1,50 @@
+2023-11-25 04:50:30.008 +01:00 [Information] Database query initiated: Register user with username: pavlovicachilleas@gmail.com
+2023-11-25 04:50:30.429 +01:00 [Information] Database register operation succesfull with username: pavlovicachilleas@gmail.com
+2023-11-25 04:50:30.430 +01:00 [Information] Database query initiated: Register user with username: kincetube30@gmail.com
+2023-11-25 04:50:30.443 +01:00 [Information] Database register operation succesfull with username: kincetube30@gmail.com
+2023-11-25 04:50:30.443 +01:00 [Information] Database query initiated: Register user with username: lilchilleas@gmail.com
+2023-11-25 04:50:30.447 +01:00 [Information] Database register operation succesfull with username: lilchilleas@gmail.com
+2023-11-25 04:50:30.989 +01:00 [Information] User profile is available. Using '"C:\Users\pavlo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-25 04:50:31.099 +01:00 [Information] Now listening on: "http://localhost:5000"
+2023-11-25 04:50:31.100 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-11-25 04:50:31.100 +01:00 [Information] Hosting environment: "Development"
+2023-11-25 04:50:31.100 +01:00 [Information] Content root path: "C:\Users\pavlo\Downloads\Oblig-2\Oblig2.API"
+2023-11-25 04:51:17.321 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 76
+2023-11-25 04:51:17.436 +01:00 [Warning] Failed to determine the https port for redirect.
+2023-11-25 04:51:17.438 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 04:51:17.468 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 04:51:17.543 +01:00 [Information] Login attempt with Username: lilchilleas
+2023-11-25 04:51:17.547 +01:00 [Information] Database query initiated: Checking username: lilchilleas for existence and mathcing password in database
+2023-11-25 04:51:17.647 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 04:51:17.649 +01:00 [Warning] Login failed: Username: lilchilleas
+2023-11-25 04:51:17.660 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 04:51:17.676 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 201.6619ms
+2023-11-25 04:51:17.676 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 04:51:17.693 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 76 - 401 - application/problem+json;+charset=utf-8 371.6388ms
+2023-11-25 04:51:25.150 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 68
+2023-11-25 04:51:25.156 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 04:51:25.157 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 04:51:25.161 +01:00 [Information] Login attempt with Username: lilchilleas
+2023-11-25 04:51:25.162 +01:00 [Information] Database query initiated: Checking username: lilchilleas for existence and mathcing password in database
+2023-11-25 04:51:25.262 +01:00 [Warning] Database login operation failed: Attempted to complete with a User of null object
+2023-11-25 04:51:25.263 +01:00 [Warning] Login failed: Username: lilchilleas
+2023-11-25 04:51:25.264 +01:00 [Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2023-11-25 04:51:25.265 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 108.6388ms
+2023-11-25 04:51:25.266 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 04:51:25.266 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 68 - 401 - application/problem+json;+charset=utf-8 116.0680ms
+2023-11-25 04:51:35.216 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 78
+2023-11-25 04:51:35.221 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 04:51:35.221 +01:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Oblig2.API.DTO.UserLoginDto)" on controller "Oblig2.API.Controllers.AuthController" ("Oblig2.API").
+2023-11-25 04:51:35.222 +01:00 [Information] Login attempt with Username: lilchilleas@gmail.com
+2023-11-25 04:51:35.222 +01:00 [Information] Database query initiated: Checking username: lilchilleas@gmail.com for existence and mathcing password in database
+2023-11-25 04:51:35.237 +01:00 [Information] Database login operation succesfull with username: lilchilleas@gmail.com and verified password
+2023-11-25 04:51:35.277 +01:00 [Information] User: lilchilleas@gmail.com logged in successfully
+2023-11-25 04:51:35.282 +01:00 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2023-11-25 04:51:35.290 +01:00 [Information] Executed action "Oblig2.API.Controllers.AuthController.Login (Oblig2.API)" in 68.4891ms
+2023-11-25 04:51:35.290 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.AuthController.Login (Oblig2.API)"'
+2023-11-25 04:51:35.290 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 78 - 200 - application/json;+charset=utf-8 74.0479ms
+2023-11-25 04:53:18.899 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:5000/api/discussion/1/createcomment
+ application/json 78
+2023-11-25 04:53:18.956 +01:00 [Information] Request finished HTTP/1.1 POST http://localhost:5000/api/discussion/1/createcomment
+ application/json 78 - 404 0 - 57.9208ms
+2023-11-25 04:54:08.781 +01:00 [Information] Application is shutting down...

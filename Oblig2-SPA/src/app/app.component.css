@@ -1,0 +1,33 @@
+
+ 
+    .btn:hover {
+        background-color: #70AD47;
+        border-color: #70AD47;
+        color: black;
+    }
+
+    .talk-bubble {
+        margin: 25px;
+        margin-bottom: 40px;
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: auto;
+        background-color: #70AD47;
+        border: 8px solid #70AD47;
+        border-radius: 30px;
+    }
+
+    .tri-right.border.btm-left-in:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 30px;
+        right: auto;
+        top: auto;
+        bottom: -40px;
+        border: 20px solid;
+        border-color: #70AD47 transparent transparent #70AD47;
+    }
+ 

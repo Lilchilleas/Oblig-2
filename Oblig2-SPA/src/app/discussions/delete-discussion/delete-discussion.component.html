@@ -1,0 +1,10 @@
+<div class="m-4">
+  <div class="col-md-10 mx-auto">
+    <h1 class="display-6 mt-4 mb-4">Delete discussion</h1>
+    <div class="border rounded shadow p-4" style=" background-color: #f0f0f0;">
+      <h4 class="m-4">Title: {{ discussion?.title }} </h4>
+      <p class="m-4">Content: {{ discussion?.content }} </p>
+    </div>
+    <button (click)="onSubmit()" type="submit" class="btn btn-danger mt-4">Delete Discussion</button>
+  </div>
+</div>

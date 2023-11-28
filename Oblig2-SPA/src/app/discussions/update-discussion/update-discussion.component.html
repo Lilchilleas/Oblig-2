@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit()" #discussionForm="ngForm" class="m-4">
+  <div class="col-md-10 mx-auto m-4">
+    <label for="title" class="form-label">Title</label>
+    <div *ngIf="discussionForm.form.get('title')?.invalid && (discussionForm.form.get('title')?.dirty || discussionForm.form.get('title')?.touched)" class="text-danger mb-2">Title is required</div>
+    <input id="title" [(ngModel)]="discussion.title" name="title" required class="form-control" placeholder="">
+  </div>
+
+  <div class="col-md-10 mx-auto m-4">
+    <label for="content" class="form-label">Content</label>
+    <div *ngIf="discussionForm.form.get('content')?.invalid && (discussionForm.form.get('content')?.dirty || discussionForm.form.get('content')?.touched)" class="text-danger mb-2">Content is required</div>
+    <textarea id="content" [(ngModel)]="discussion.content" name="content" required class="form-control" rows="5" placeholder=""></textarea>
+  </div>
+  <div class="col-md-10 mx-auto m-4">
+    <button type="submit" [disabled]="!discussionForm.valid" class="btn" style="background-color: #70AD47;">Update Discussion</button>
+  </div>
+</form>
+

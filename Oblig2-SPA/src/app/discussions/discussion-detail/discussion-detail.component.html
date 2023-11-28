@@ -1,0 +1,44 @@
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-12 mx-auto">
+      <div class="d-flex justify-content-between m-4">
+        <div class="d-flex flex-row align-items-center">
+          <div class="m-4">
+            <div class="border rounded shadow m-4 p-4" style=" background-color: #f0f0f0;">
+              <h1 class="display-6">{{ discussion?.title }}</h1>
+              <p class="lead mt-3">{{ discussion?.content }}</p>
+              <p><small>Created by: {{ createdByUser?.username }}</small></p>
+      
+              <ng-container *ngIf="isOwner">
+                <a [routerLink]="['/update-discussion', discussion?.id]" class="btn m-2 w-auto" style="background-color: #70AD47;">EDIT</a>
+                <a [routerLink]="['/delete-discussion', discussion?.id]" class="btn btn-danger m-2 w-auto">DELETE</a>
+              </ng-container>
+            </div>
+      
+            <hr />
+      
+            <div class="m-4">
+              <h5 class="mt-2">Comments</h5>
+              <app-create-comment [discussionId]="discussionId" class="mb-2"></app-create-comment>
+      
+              <div *ngFor="let comment of discussion?.comments" class="mb-4">
+                <app-comment [comment]="comment"></app-comment>
+              </div>
+      
+              <a routerLink="/discussions" class="btn btn-secondary mt-4">Back to Discussions List</a>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+ 

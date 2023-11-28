@@ -1,0 +1,24 @@
+<form #loginForm="ngForm" (ngSubmit)="login()" class="m-4">
+  <div class="col-md-6 mx-auto">
+    <h2 class="mt-4">Login</h2>
+    <hr>
+    <div>
+      {{errorMessage}}
+    </div>
+
+    <div class="form-group m-2">
+      <label for="username" class="mb-2">Username</label>
+      <input type="text" class="form-control" name="username" placeholder="Enter username" required [(ngModel)]="model.username">
+      <div *ngIf="loginForm.form.get('username')?.invalid && (loginForm.form.get('username')?.dirty || loginForm.form.get('username')?.touched)">Username is required</div>
+    </div>
+
+    <div class="form-group m-2">
+      <label for="exampleInputPassword1" class="mb-2">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Enter password" required [(ngModel)]="model.password">
+      <div *ngIf="loginForm.form.get('password')?.invalid && (loginForm.form.get('password')?.dirty || loginForm.form.get('password')?.touched)">Password is required</div>
+    </div>
+
+    <button [disabled]="!loginForm.valid" type="submit" class="btn w-auto m-2" style="background-color: #70AD47;">Log in</button>
+  </div>
+</form>
+

@@ -1,0 +1,15 @@
+.comment {
+    border-left: 2px solid #ccc;
+    margin-left: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.comment:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    border-top: 2px solid #ccc;
+}

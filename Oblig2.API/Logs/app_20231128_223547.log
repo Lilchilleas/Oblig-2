@@ -1,0 +1,28 @@
+2023-11-28 22:35:50.928 +01:00 [Information] Database query initiated: Register user with username: pavlovicachilleas@gmail.com
+2023-11-28 22:35:51.469 +01:00 [Information] Database register operation succesfull with username: pavlovicachilleas@gmail.com
+2023-11-28 22:35:51.469 +01:00 [Information] Database query initiated: Register user with username: kincetube30@gmail.com
+2023-11-28 22:35:51.500 +01:00 [Information] Database register operation succesfull with username: kincetube30@gmail.com
+2023-11-28 22:35:51.500 +01:00 [Information] Database query initiated: Register user with username: lilchilleas@gmail.com
+2023-11-28 22:35:51.504 +01:00 [Information] Database register operation succesfull with username: lilchilleas@gmail.com
+2023-11-28 22:35:52.408 +01:00 [Information] User profile is available. Using '"C:\Users\pavlo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-28 22:35:52.583 +01:00 [Information] Now listening on: "http://localhost:5000"
+2023-11-28 22:35:52.584 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-11-28 22:35:52.584 +01:00 [Information] Hosting environment: "Development"
+2023-11-28 22:35:52.584 +01:00 [Information] Content root path: "C:\Users\pavlo\Downloads\Oblig-2\Oblig-2\Oblig2.API"
+2023-11-28 22:36:10.098 +01:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - -
+2023-11-28 22:36:10.384 +01:00 [Information] CORS policy execution successful.
+2023-11-28 22:36:10.401 +01:00 [Information] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/discussion - - - 204 - - 311.9719ms
+2023-11-28 22:36:10.422 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/discussion - -
+2023-11-28 22:36:10.453 +01:00 [Information] CORS policy execution successful.
+2023-11-28 22:36:11.034 +01:00 [Warning] Failed to determine the https port for redirect.
+2023-11-28 22:36:11.042 +01:00 [Information] Executing endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-28 22:36:11.088 +01:00 [Information] Route matched with "{action = \"GetDiscussions\", controller = \"Discussion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetDiscussions()" on controller "Oblig2.API.Controllers.DiscussionController" ("Oblig2.API").
+2023-11-28 22:36:11.233 +01:00 [Information] Acquiring to get all discussions
+2023-11-28 22:36:11.235 +01:00 [Information] Database query initiated: Fetching all discussions
+2023-11-28 22:36:11.346 +01:00 [Information] Database get operation succesfull
+2023-11-28 22:36:11.349 +01:00 [Information] Retrieved all discussions | Amount: 2 discussions
+2023-11-28 22:36:11.361 +01:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Oblig2.API.DTO.DiscussionDto, Oblig2.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-11-28 22:36:11.511 +01:00 [Information] Executed action "Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)" in 411.2075ms
+2023-11-28 22:36:11.512 +01:00 [Information] Executed endpoint '"Oblig2.API.Controllers.DiscussionController.GetDiscussions (Oblig2.API)"'
+2023-11-28 22:36:11.522 +01:00 [Information] Request finished HTTP/1.1 GET http://localhost:5000/api/discussion - - - 200 - application/json;+charset=utf-8 1099.8573ms
+2023-11-28 22:36:54.709 +01:00 [Information] Application is shutting down...

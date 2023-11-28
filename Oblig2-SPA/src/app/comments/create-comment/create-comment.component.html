@@ -1,0 +1,8 @@
+<form #commentForm="ngForm" (submit)="onSubmit()" class="m-4">
+  <div class="mb-4">
+    <div *ngIf="commentForm.form.get('content')?.invalid && (commentForm.form.get('content')?.dirty || commentForm.form.get('content')?.touched)" class="text-danger mb-2">Content is needed</div>
+    <textarea [(ngModel)]="content" name="content" required class="form-control w-100" rows="3" placeholder="Enter comment"></textarea>
+  </div>
+  
+  <button type="submit" [disabled]="commentForm.invalid" class="btn w-auto" style="background-color: #70AD47;">Submit</button>
+</form>

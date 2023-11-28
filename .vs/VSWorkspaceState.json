@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Oblig2-SPA",
+    "\\Oblig2-SPA\\src",
+    "\\Oblig2-SPA\\src\\app",
+    "\\Oblig2-SPA\\src\\app\\comments",
+    "\\Oblig2-SPA\\src\\app\\comments\\comment",
+    "\\Oblig2-SPA\\src\\app\\service",
+    "\\Oblig2.API",
+    "\\Oblig2.API\\Controllers",
+    "\\Oblig2.API\\DTO"
+  ],
+  "SelectedNode": "\\Oblig2.API\\Controllers\\DIscussionController.cs",
+  "PreviewInSolutionExplorer": false
+}

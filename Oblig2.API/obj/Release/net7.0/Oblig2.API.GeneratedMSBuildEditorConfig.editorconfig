@@ -1,0 +1,17 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Oblig2.API
+build_property.RootNamespace = Oblig2.API
+build_property.ProjectDir = C:\Users\meret\OneDrive\Dokumenter\Informasjonsteknologi\Høst 2023\ITPE3200\Oblig_2\Oblig-2-master\Oblig2.API\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\meret\OneDrive\Dokumenter\Informasjonsteknologi\Høst 2023\ITPE3200\Oblig_2\Oblig-2-master\Oblig2.API
+build_property._RazorSourceGeneratorDebug = 
